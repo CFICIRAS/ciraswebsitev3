@@ -49,10 +49,10 @@
 	{
 		width: 1200px;
 	}
-	.header_content
+	 .header_content 
 	{
-		width: calc(100% - 219px);
-	}
+		width: 100% ;
+	 } 
 	.main_nav_container
 	{
 		padding-right: 63px;
