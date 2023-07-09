@@ -51,7 +51,7 @@
 	}
 	.header_content
 	{
-		width: calc(100% - 219px);
+		width: 100%;
 	}
 	.main_nav_container
 	{
@@ -93,6 +93,10 @@
 	.main_nav_container
 	{
 		padding-right: 53px;
+	}
+	.card-title
+	{
+		font-size: 20px;
 	}
 }
 
@@ -144,9 +148,26 @@
 	{
 		display: block;
 	}
-	.sidebar
+	.teacher:nth-last-child(-n+3)
 	{
-		margin-top: 120px;
+		margin-bottom: 80px;
+	}
+	.teacher:last-child
+	{
+		margin-bottom: 0px !important;
+	}
+	.milestone_col
+	{
+		margin-bottom: 80px;
+	}
+	.milestone_col:last-child
+	{
+		margin-bottom: 0px;
+	}
+	.become_image
+	{
+		margin-top: 0px;
+		margin-bottom: 67px;
 	}
 	.newsletter_form_container
 	{
@@ -200,15 +221,6 @@
 		right: -100vw;
 		width: 100vw;
 		height: 100vh;
-	}
-	.news_post_title_container
-	{
-		margin-top: -4px;
-		padding-left: 21px;
-	}
-	.news_post_title a
-	{
-		font-size: 27px;
 	}
 	.newsletter_email
 	{
@@ -288,52 +300,17 @@
 	{
 		font-size: 30px;
 	}
-	.news_post_title_container
+	.card-title
 	{
-		margin-top: 20px;
-		padding-left: 0px;
+		margin-top: 30px;
 	}
-	.news_post_date
-	{
-		width: 55px;
-		height: 55px;
-	}
-	.news_post_date div:first-child
-	{
-		font-size: 18px;
-	}
-	.news_post_date div:last-child
-	{
-		font-size: 11px;
-	}
-	.news_post_title a
+	.card-title a
 	{
 		font-size: 20px;
 	}
-	.news_post_text
+	.card-text
 	{
-		margin-top: 20px;
-	}
-	.news_post_button
-	{
-		width: 138px;
-		height: 42px;
-	}
-	.news_post_button a
-	{
-		font-size: 14px;
-		line-height: 42px;
-	}
-	.tag
-	{
-		height: 35px;
-	}
-	.tag a
-	{
-		font-size: 14px;
-		line-height: 35px;
-		padding-left: 23px;
-    	padding-right: 23px;
+		font-size: 13px;
 	}
 	.footer_bar
 	{
@@ -378,15 +355,6 @@
 	{
 		height: 60px;
 		top: 15px;
-	}
-	.comment_image
-	{
-		width: 50px;
-		height: 50px;
-	}
-	.comment_content
-	{
-		padding-left: 19px;
 	}
 }
 

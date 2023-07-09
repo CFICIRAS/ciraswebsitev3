@@ -49,10 +49,10 @@
 	{
 		width: 1200px;
 	}
-	.header_content
+	/* .header_content
 	{
-		width: calc(100% - 219px);
-	}
+		width: 100%;
+	} */
 	.main_nav_container
 	{
 		padding-right: 63px;
@@ -94,19 +94,6 @@
 	{
 		padding-right: 53px;
 	}
-	.hero_slide_content h1
-	{
-		font-size: 56px;
-	}
-	.card-title
-	{
-		font-size: 20px;
-	}
-	.register_content,
-	.search_content
-	{
-		width: 442px;
-	}
 }
 
 /************
@@ -115,10 +102,7 @@
 
 @media only screen and (max-width: 1199px)
 {
-	.hero_box
-	{
-		padding-left: 20px;
-	}
+	
 }
 
 /************
@@ -160,72 +144,9 @@
 	{
 		display: block;
 	}
-	.hero_slide_content h1
+	.sidebar
 	{
-		font-size: 48px;
-	}
-	.hero_boxes
-	{
-		width: 100%;
-		height: auto;
-		padding-top: 117px;
-	}
-	.hero_boxes_inner
-	{
-		position: relative;
-		top: auto;
-		left: auto;
-	}
-	.hero_box
-	{
-		padding-left: 50px;
-	}
-	.hero_box_col
-	{
-		margin-bottom: 30px;
-	}
-	.hero_box_col:last-child
-	{
-		margin-bottom: 0px;
-	}
-	.course_box
-	{
-		margin-bottom: 80px;
-	}
-	.course_box:nth-last-child(-n+3)
-	{
-		margin-bottom: 80px;
-	}
-	.course_box:last-child
-	{
-		margin-bottom: 0px !important;
-	}
-	.search_section
-	{
-		padding-top: 156px;
-		padding-bottom: 161px;
-	}
-	.register_content,
-	.search_content
-	{
-		width: 75%;
-	}
-	.testimonials_slider_container
-	{
-		padding-left: 0px;
-		padding-right: 0px;
-	}
-	.event_date
-	{
-		margin-top: 30px;
-	}
-	.event_name
-	{
-		margin-top: 17px;
-	}
-	.event_content p
-	{
-		margin-bottom: 0px;
+		margin-top: 120px;
 	}
 	.newsletter_form_container
 	{
@@ -279,6 +200,15 @@
 		right: -100vw;
 		width: 100vw;
 		height: 100vh;
+	}
+	.news_post_title_container
+	{
+		margin-top: -4px;
+		padding-left: 21px;
+	}
+	.news_post_title a
+	{
+		font-size: 27px;
 	}
 	.newsletter_email
 	{
@@ -358,67 +288,52 @@
 	{
 		font-size: 30px;
 	}
-	.card-title
+	.news_post_title_container
 	{
-		margin-top: 30px;
+		margin-top: 20px;
+		padding-left: 0px;
 	}
-	.card-title a
+	.news_post_date
+	{
+		width: 55px;
+		height: 55px;
+	}
+	.news_post_date div:first-child
+	{
+		font-size: 18px;
+	}
+	.news_post_date div:last-child
+	{
+		font-size: 11px;
+	}
+	.news_post_title a
 	{
 		font-size: 20px;
 	}
-	.card-text
+	.news_post_text
 	{
-		font-size: 13px;
+		margin-top: 20px;
 	}
-	.price_box
+	.news_post_button
 	{
-		margin-top: 37px;
+		width: 138px;
+		height: 42px;
 	}
-	.register_section,
-	.search_section
-	{
-		padding-top: 115px;
-		padding-bottom: 120px;
-	}
-	.register_content,
-	.search_content
-	{
-		width: 100%;
-		padding-left: 15px;
-		padding-right: 15px;
-	}
-	.register_text
-	{
-		margin-top: 25px;
-	}
-	.register_button
-	{
-		margin-top: 53px;
-	}
-	.testimonials_slider .owl-dots
-	{
-		display: none !important;
-	}
-	.testimonials_item
-	{
-		padding-bottom: 0px;
-	}
-	.event_date
-	{
-		width: 100px;
-		height: 100px;
-	}
-	.event_day
-	{
-		font-size: 36px;
-	}
-	.event_month
+	.news_post_button a
 	{
 		font-size: 14px;
+		line-height: 42px;
 	}
-	.event_name
+	.tag
 	{
-		margin-top: 5px;
+		height: 35px;
+	}
+	.tag a
+	{
+		font-size: 14px;
+		line-height: 35px;
+		padding-left: 23px;
+    	padding-right: 23px;
 	}
 	.footer_bar
 	{
@@ -464,42 +379,14 @@
 		height: 60px;
 		top: 15px;
 	}
-	.hero_slide_content h1
+	.comment_image
 	{
-		font-size: 28px;
+		width: 50px;
+		height: 50px;
 	}
-	.hero_slide_content h1 span
+	.comment_content
 	{
-		padding-left: 5px;
-		padding-right: 5px;
-		margin-left: 0px;
-		margin-right: 0px;
-	}
-	.hero_boxes
-	{
-		padding-top: 80px;
-	}
-	.hero_box
-	{
-		padding-left: 15px;
-		height: 120px;
-	}
-	.hero_box_content
-	{
-		padding-top: 6px;
-	}
-	.hero_box img
-	{
-		width: 45px;
-	}
-	.hero_box_title
-	{
-		font-size: 18px;
-		margin-bottom: 3px;
-	}
-	.hero_box_link
-	{
-		font-size: 10px;
+		padding-left: 19px;
 	}
 }
 
