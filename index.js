@@ -1,13 +1,13 @@
 const express = require('express') ; 
 const path = require('path');
+const routes = require('./server/routes/user.routes')
 const PORT = process.env.PORT || 3000
 const app = express()
-
-const routes = require('./server/routes/routes.users') //liens routes
 /** MOTEUR DE RENDU */
 app.set('view engine', 'ejs')
 
 /* MIDDLEWARE */
+app.use(routes) ; 
 app.use(express.urlencoded({ extended : true}))
 app.use(express.json())
 
@@ -18,6 +18,7 @@ app.use('/js', express.static(path.resolve(__dirname,'assets/js')))
 app.use('/scss', express.static(path.resolve(__dirname,'assets/sass')))
 app.use('/upload', express.static(path.resolve(__dirname,'server/uploads')))
 app.use(express.static('public'));
+
 
 app.get('*', function(req, res){
   res.render('404'); 

@@ -45,4 +45,6 @@ userRoute.get('/directeur', (req, res)=>{
 })
 userRoute.get('/personnel', (req,res)=>{
     res.render('professeur', {page_name: 'service'})
-})
+}) ; 
+
+module.exports = userRoute ; 
