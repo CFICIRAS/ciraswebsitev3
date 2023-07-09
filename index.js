@@ -15,7 +15,7 @@ app.use('/css', express.static(path.resolve(__dirname,'assets/styles')))
 app.use('/img', express.static(path.resolve(__dirname,'assets/images')))
 app.use('/fonts', express.static(path.resolve(__dirname,'assets/fonts')))
 app.use('/js', express.static(path.resolve(__dirname,'assets/js')))
-app.use('/sjs', express.static(path.resolve(__dirname,'styles/js')))
+app.use('/sjs', express.static(path.resolve(__dirname,'assets/styles/')))
 app.use('/pjs', express.static(path.resolve(__dirname,'assets/plugins')))
 app.use('/scss', express.static(path.resolve(__dirname,'assets/sass')))
 app.use('/upload', express.static(path.resolve(__dirname,'server/uploads')))
@@ -23,9 +23,7 @@ app.use('/plugins', express.static(path.resolve(__dirname,'assets/plugins')))
 app.use(express.static('public'));
 
 
-app.get('*', function(req, res){
-  res.render('404'); 
-});
+
 
 // renvoie la PAGE 404 
 app.listen(PORT, ()=> { console.log(`Serveur active sur http://localhost:${PORT}`)});
