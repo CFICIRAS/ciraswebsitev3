@@ -15,7 +15,7 @@ userRoute.get('/inscription', (req,res)=>{
                 {page_name: 'inscription'})
 })
 userRoute.get('/formation', (req,res)=>{
-    res.render('formation', 
+    res.render('courses', 
                 {page_name: 'formation'})
 })
 userRoute.get('/contact', (req, res)=>{
