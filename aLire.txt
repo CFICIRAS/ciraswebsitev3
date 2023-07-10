@@ -1,0 +1,11 @@
+
+************************************************
+A L'ATTENTIION DE STEEV 
+
+J'ai bien fais ce que tu m'avait demandé 
+ - j'exporter le projet sur un environnement serveur 
+ - j'ai crée de fichier header et footer (pour l'en tete et le pied de page )
+    (plus besoin de copier l'entete sur tout les fichier html)
+
+    ** C'est à toi de continuer maintenant , 
+        BON TRAVAIL !
