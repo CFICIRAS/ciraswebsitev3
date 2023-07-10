@@ -51,45 +51,45 @@ userRoute.get('/personnel', (req,res)=>{
 //Les sous-routes 
 
 // rubriques formations
-route.get('/formation/infogestion', (req,res)=>{
+userRoute.get('/formation/infogestion', (req,res)=>{
     res.render('_infogest', {page_name: 'formation'})
 }) // Route info de informatique gestion
 
-route.get('/formation/infogenielogiciel', (req,res)=>{
+userRoute.get('/formation/infogenielogiciel', (req,res)=>{
     res.render('_infogl', {page_name: 'formation'})
 }) // Route info genie logiciel
 
-route.get('/formation/infosystemer', (req,res)=>{
+userRoute.get('/formation/infosystemer', (req,res)=>{
     res.render('_infosys', {page_name: 'formation'})
 }) // Route info genie logiciel
 
-route.get('/formation/adminpublique', (req,res)=>{
-    res.render('_adminp', {page_name: 'formation'})
+userRoute.get('/formation/adminpublique', (req,res)=>{
+    res.render('_adminp3', {page_name: 'formation'})
 }) // Route info admin publique
 
-route.get('/formation/aum', (req,res)=>{
+userRoute.get('/formation/aum', (req,res)=>{
     res.render('_aum' , {page_name: 'formation'})
 }) // Route admin assistant manager 
-route.get('/formation/netacad', (req,res)=>{
+userRoute.get('/formation/netacad', (req,res)=>{
     res.render('_netacad' , {page_name: 'formation'})
 }) // Route admin assistant manager 
-route.get('/formation/assistmanage', (req,res)=>{
-    res.render('_adminA' , {page_name: 'formation'})
+userRoute.get('/formation/assistmanage', (req,res)=>{
+    res.render('_adminp' , {page_name: 'formation'})
 })
-route.get('/formation/maintenance', (req,res)=>{
+userRoute.get('/formation/maintenance', (req,res)=>{
     res.render('_maint' , {page_name: 'formation'})
 })
 
 // ROUTE ACTUALITES ET EVENEMENT 
-route.get('/activites/news1', (req, res)=>{
+userRoute.get('/activites/news1', (req, res)=>{
     res.render('news/_news1', 
                 {page_name: 'activites'})
 })
-route.get('/activites/news2', (req, res)=>{
+userRoute.get('/activites/news2', (req, res)=>{
     res.render('news/_news2', 
                 {page_name: 'activites'})
 })
-route.get('/activites/news3', (req, res)=>{
+userRoute.get('/activites/news3', (req, res)=>{
     res.render('news/_news3', 
                 {page_name: 'activites'})
 })
