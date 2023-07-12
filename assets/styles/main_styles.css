@@ -433,6 +433,63 @@ p a
         transform: translateY(0);
     }
 }
+.chargés-enseignement-section,
+.chargés-cours-section,
+.chargés-technique-professionnel-section {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.chargés-enseignement-section .image-column,
+.chargés-cours-section .image-column,
+.chargés-technique-professionnel-section .image-column {
+    width: 20%;
+    padding: 10px;
+    box-sizing: border-box;
+    opacity: 0;
+    transform: translateY(20px);
+    animation-name: fadeInUp;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.chargés-enseignement-section .image-column:nth-child(5n+1),
+.chargés-cours-section .image-column:nth-child(5n+1),
+.chargés-technique-professionnel-section .image-column:nth-child(5n+1) {
+    clear: both;
+}
+
+.chargés-enseignement-section .image-column img,
+.chargés-cours-section .image-column img,
+.chargés-technique-professionnel-section .image-column img {
+    width: 100%;
+    height: auto;
+    cursor: pointer;
+    transition: transform 0.3s;
+}
+
+.chargés-enseignement-section .image-column img:hover,
+.chargés-cours-section .image-column img:hover,
+.chargés-technique-professionnel-section .image-column img:hover {
+    transform: scale(1.1);
+}
+
+.image-name {
+    text-align: center;
+    margin-top: 10px;
+    font-weight: bold;
+}
   
   
 
