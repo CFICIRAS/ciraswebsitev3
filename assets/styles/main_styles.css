@@ -330,6 +330,109 @@ p a
 	color: #333333;
 	font-weight: bold;
   }
+  .admin-cfi-section {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.image-column {
+    width: 25%;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.image-column img {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    transition: transform 0.3s;
+}
+
+.image-column img:hover {
+    transform: scale(1.1);
+}
+
+.image-name {
+    text-align: center;
+    margin-top: 10px;
+}
+  
+.admin-cfi-section {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.image-column {
+    width: 25%;
+    padding: 10px;
+    box-sizing: border-box;
+    opacity: 0;
+    transform: translateY(20px);
+    animation-name: fadeInUp;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+    animation-delay: 0.2s;
+}
+
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.image-column img {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    transition: transform 0.3s;
+}
+
+.image-column img:hover {
+    transform: scale(1.1);
+}
+
+.image-name {
+    text-align: center;
+    margin-top: 10px;
+    opacity: 0;
+    animation-name: fadeIn;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+    animation-delay: 0.4s;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+.presentation-corps_text {
+    opacity: 0;
+    transform: translateY(20px);
+    animation-name: fadeInUp;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+    animation-delay: 0.2s;
+}
+
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
   
   
 
