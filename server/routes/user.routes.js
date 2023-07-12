@@ -38,10 +38,10 @@ userRoute.get('/decret', (req, res)=>{
 })
 
 userRoute.get('/equipe', (req, res)=>{
-    res.render('legal/_team', {page_name: 'service'})
+    res.render('_team', {page_name: 'service'})
 })
 userRoute.get('/directeur', (req, res)=>{
-    res.render('legal/_directeur', {page_name: 'service'})
+    res.render('_directeur', {page_name: 'service'})
 })
 userRoute.get('/personnel', (req,res)=>{
     res.render('professeur', {page_name: 'service'})
