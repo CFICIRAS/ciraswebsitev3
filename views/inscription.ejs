@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>CFI-CIRAS</title>
+    <link rel="stylesheet" type="text/css" href="/css/success_styles.css">
+    <link rel="stylesheet" type="text/css" href="/css/news_styles.css">
+    <link rel="stylesheet" type="text/css" href="/css/news_responsive.css">
+    <link rel="stylesheet" type="text/css" href="/css/custom.css">
+    <link rel="stylesheet" type="text/css" href="/css/bootstrap4/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+    <%-include ('./includes/header')%>
+
+    <!-- Styles Bootstrap 4 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/css/bootstrap.min.css">
+
+    <!-- Styles Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+</head>
+
+<body>
+    <!-- Home -->
+    <div class="home">
+        <div class="home_background_container prlx_parent">
+            <div class="home_background prlx" style="background-image:url(/img/courses_background.jpg)"></div>
+        </div>
+        <div class="home_content">
+            <h1>Inscription</h1>
+        </div>
+    </div>
+
+    <!-- Admission par Concours -->
+    <div class="admission-concours-section page_section">
+        <div class="row">
+            <div class="col">
+                <div class="section_title text-center">
+                    <h1>Inscription et Admission au CFI-CIRAS</h1>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row mt-5">
+                <div class="col-lg-4">
+                    <div class="admission-concours-item">
+                        <div class="admission-concours-icon">
+                            <i class="fas fa-graduation-cap fa-2x" style="color: #fff200;"></i>
+                        </div>
+                        <h2 class="admission-title">Admission par Concours</h2>
+                        <div class="admission-concours-content">
+                            <p class="admission-text">Participez à notre concours d'admission et démontrez vos compétences pour être sélectionné.</p>
+                            <p class="admission-text">Pour les titulaires en baccalauréat de l'enseignement général ou de l'enseignement technique ou de tout autre diplôme admis en équivalence;</p>
+                            <p class="admission-text">Pour les fonctionnaires et agents non titulaires de l'État classés à la catégorie B, hiérarchie I (actuellement catégorie II, échelle 2), titulaires d'un baccalauréat ou de tout autre diplôme admis en équivalence;</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="admission-concours-item">
+                        <div class="admission-concours-icon">
+                            <i class="fas fa-pencil-alt fa-2x" style="color: #fff200;"></i>
+                        </div>
+                        <h2 class="admission-title">Admission par Test</h2>
+                        <div class="admission-concours-content">
+                            <p class="admission-text">Effectuez un test d'évaluation pour évaluer vos connaissances et qualifications.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="admission-concours-item">
+                        <div class="admission-concours-icon">
+                            <i class="fas fa-graduation-cap fa-2x" style="color: #fff200;"></i>
+                        </div>
+                        <h2 class="admission-title">Admission par Titre</h2>
+                        <div class="admission-concours-content">
+                            <p class="admission-text">Obtenez l'admission en fonction de votre diplôme ou titre professionnel.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <h2 class="composition-dossier-title text-center"><i class="fas fa-folder"></i> Composition du dossier</h2>
+
+    <!-- Composition du dossier -->
+    <div class="composition-dossier-section page_section">
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <div class="composition-dossier-content">
+                        <ul class="composition-dossier-list">
+                            <li>Une demande manuscrite adressée au directeur du CFI-CIRAS</li>
+                            <li>Un extrait d'acte de naissance</li>
+                            <li>Quatres (4) photos en couleur format identité</li>
+                            <li> Trois (3) enveloppes format A4</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+<!-- Inscription -->
+<div class="inscription-section page_section">
+    <div class="container">
+        <h2 class="Inscription-title text-center"><i class=""></i>Inscription</h2>
+        <div class="row">
+            <div class="col">
+                <div class="Inscription-content">
+                    <p class="Inscription-text text-justify">Remplir un formulaire pour candidater pour le prochain concours d'entrée au CFI-CIRAS</p>
+                    <p class="Inscription-text text-justify">L'inscription se passe en deux étapes :</p>
+                    <ul class="Inscription-list text-justify">
+                        <li>La première consiste à faire un dépôt de dossier en ligne via le site web du CFI-CIRAS</li>
+                        <li>La deuxième consiste à valider l'inscription au CFI-CIRAS moyennant le frais d'inscription</li>
+                    </ul>
+                    <div class="text-center">
+                        <a href="#" class="btn btn-primary btn-round btn-depot-dossier" data-toggle="modal" data-target="#inscriptionModal">Dépôt de dossier</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Modal -->
+<div class="modal fade" id="inscriptionModal" tabindex="-1" role="dialog" aria-labelledby="inscriptionModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="inscriptionModalLabel">Inscription</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <form id="inscriptionForm">
+                    <div class="form-group">
+                        <label for="nom">Nom :</label>
+                        <input type="text" id="nom" name="nom" class="form-control" required>
+                        <small id="fileHelp" class="form-text text-muted">Entrez votre nom(s)</small>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="prenom">Prénom :</label>
+                        <input type="text" id="prenom" name="prenom" class="form-control" required>
+                        <small id="fileHelp" class="form-text text-muted">Entrez votre prénom(s)</small>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="telephone">Téléphone :</label>
+                        <input type="tel" id="telephone" name="telephone" class="form-control" required>
+                        <small id="fileHelp" class="form-text text-muted">Entrez votre numéro de téléphone</small>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="profil">Profil :</label>
+                        <select id="profil" name="profil" class="form-control" required>
+                            <option value="Option 1">Bachelier</option>
+                            <option value="Option 2">Fonctionnaire</option>
+                        </select>
+                        <small id="fileHelp" class="form-text text-muted">Vous êtes un Bachelier ou un Fonctionnaire</small>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="bac">Bac :</label>
+                        <select id="bac" name="bac" class="form-control" required>
+                            <option value="">Choisir le Bac</option>
+                            <option value="Bac Option A">Bac A</option>
+                            <option value="Bac Option B">Bac Option B</option>
+                            <option value="Bac Option C">Bac Option C</option>
+                        </select>
+                        <small id="fileHelp" class="form-text text-muted">Vous avez quel BAC ?</small>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="filieres">Filières :</label>
+                        <select id="filieres" name="filieres" class="form-control" required>
+                            <option value="">Choisir la filière</option>
+                            <option value="Filière 1">INFORMATIQUE</option>
+                            <option value="Filière 2">ADMINISTRATION PUBLIQUE</option>
+                            <option value="Filière 3">ASSISTANT MANAGER</option>
+                        </select>
+                        <small id="fileHelp" class="form-text text-muted">Vous choisissez quel filière ?</small>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="cycles">Cycles :</label>
+                        <select id="cycles" name="cycles" class="form-control" required>
+                            <option value="">Choisir une option</option>
+                            <option value="Cycle 1">DUT</option>
+                            <option value="Cycle 2">LICENCE</option>
+                        </select>
+                        <small id="fileHelp" class="form-text text-muted">Vous choisissez quel cycle ?</small>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="extrait">Extrait d'acte de naissance  (PDF) :</label>
+                        <input type="file" id="extrait" name="extrait" class="form-control" accept=".pdf" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="diplome">Diplôme (PDF) :</label>
+                        <input type="file" id="diplome" name="diplome" class="form-control" accept=".pdf" required>
+                        <small id="fileHelp" class="form-text text-muted">Une photocopie certifiée conforme du baccalauréat ou diplôme équivalent</small>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="autorisation">Autorisation (PDF) :</label>
+                        <input type="file" id="autorisation" name="autorisation" class="form-control" accept=".pdf" required>
+                        <small id="fileHelp" class="form-text text-muted">Autorisation de concourir délivrée par le ministère de la fonction publique (Pour les fonctionnaires)</small>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="arrete">Arrêté (PDF) :</label>
+                        <input type="file" id="arrete" name="arrete" class="form-control" accept=".pdf" required>
+                        <small id="fileHelp" class="form-text text-muted">Arrêté de dernière promotion (Pour les fonctionnaires)</small>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="photo">Photo d'identité (JPEG, PNG) :</label>
+                        <input type="file" id="photo" name="photo" class="form-control" accept=".jpeg,.jpg,.png" required>
+                        <small id="fileHelp" class="form-text text-muted">Photo format d'identité</small>
+                    </div>
+
+                    <button type="submit" class="btn btn-primary btn-round">Valider</button>
+                </form>
+            </div>
+            <div id="successMessage" style="display: none;">
+                <p>Votre inscription a été envoyée avec succès !</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Scripts Bootstrap 4 -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/4.6.0/js/bootstrap.min.js"></script>
+<script>
+    $(document).ready(function() {
+        $("#inscriptionModal form").submit(function(event) {
+            event.preventDefault();
+
+            // Ouvrir une nouvelle fenêtre centrée
+            var successWindow = window.open("", "_blank", "width=400,height=200,top=200,left=400");
+
+            // Contenu HTML de la fenêtre de succès
+            var successContent = `
+                <html>
+                    <head>
+                        <title>Succès</title>
+                        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+                        <link rel="stylesheet" type="text/css" href="/css/success_styles.css">
+                    </head>
+                    <body>
+                        <div class="success-message">
+                            <i class="fas fa-check-circle success-icon"></i>
+                            <h2>Votre inscription a été envoyée avec succès !</h2>
+                        </div>
+                    </body>
+                </html>
+            `;
+
+            // Écrire le contenu dans la nouvelle fenêtre
+            successWindow.document.write(successContent);
+
+            // Fermer la modal
+            $("#inscriptionModal").modal("hide");
+
+            // Réinitialisation du formulaire
+            this.reset();
+        });
+    });
+</script>
+
+
+</body>
+
+</html>

@@ -1,0 +1,15 @@
+.inscription-section {
+    text-align: justify;
+    text-align-last: center;
+    font-family: Arial, sans-serif;
+    color: #000;
+}
+
+.inscription-section p {
+    margin-bottom: 20px;
+}
+
+.inscription-section .btn-depot-dossier {
+    background-color: #ffcc00;
+    color: #000;
+}
