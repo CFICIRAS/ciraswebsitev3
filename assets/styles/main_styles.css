@@ -280,14 +280,14 @@ p a
 	flex-direction: column;
 	align-items: center;
 	justify-content: center;
-	height: 100vh;
+	height: 110vh;
 	background-color: #f2f2f2;
   }
   
   .directeur-image {
-	width: 200px;
-	height: 200px;
-	border-radius: 50%;
+	width: 400px;
+	height: 400px;
+	border-radius: 0%;
 	overflow: hidden;
   }
   
@@ -492,7 +492,83 @@ p a
     transition-delay: 0.2s;
 	
 }
-  
+
+.cours_image
+{
+	width: 100%;
+}
+.cours_image img
+{
+	width: 100%;
+	height: auto;
+}
+.cours_top
+{
+	margin-top: 38px;
+}
+.cours_date
+{
+	width: 68px;
+	height: 68px;
+	background: #ffb606;
+}
+.cours_date div:first-child
+{
+	font-size: 24px;
+	font-weight: 700;
+	color: #FFFFFF;
+	line-height: 1;
+}
+.cours_date div:last-child
+{
+	font-size: 14px;
+	font-weight: 500;
+	text-transform: uppercase;
+	color: #FFFFFF;
+	line-height: 1;
+	margin-top: 3px;
+}
+.cours_title_container
+{
+	padding-left: 31px;
+	margin-top: -7px;
+}
+.cours_title a
+{
+	text-align: justify;
+    transition: all 0.3s ease;
+	font-size: 36px;
+	font-weight: 500;
+	line-height: 1.2;
+	color: #1a1a1a;
+	font-family: "Arial", sans-seriff
+	
+}
+.cours_button{
+	font-size: 14px;
+	line-height: 48px;
+	font-weight: 700;
+	text-transform: uppercase;
+	box-shadow: 0px 10px 20px rgba(0,0,0,0.2);
+	width: 202px;
+	height: 48px;
+	outline: solid 1px #ffb606;
+	color: #ffb606;
+	background: #ffb606;
+	font-family: "Arial", sans-seriff
+	
+}
+.cours_text{
+	text-align: justify;
+    transition: all 0.3s ease;
+	font-size: 13px;
+	color: #000000;
+	margin-bottom: 15px;
+	font-family: "Arial", sans-seriff
+
+}
+
+
   
 a, a:hover, a:visited, a:active, a:link
 {
@@ -1376,7 +1452,7 @@ section
 {
 	width: 67px;
 	height: 67px;
-	background: #ffb606;
+	background: #abafaf5a;
 	margin-left: auto;
 }
 .course_price span
@@ -1398,7 +1474,7 @@ section
 .register_section
 {
 	width: 100%;
-	background: #06daff;
+	background: #abafaf5a;
 	padding-top: 156px;
 	padding-bottom: 161px;
 }
@@ -1411,6 +1487,7 @@ section
 	color: #FFFFFF;
 	margin-bottom: 16px;
 	line-height: 1.63;
+	text-align: justify;
 }
 .register_title:last-child
 {
@@ -1431,7 +1508,7 @@ section
 }
 .register_button
 {
-	background: rgb(0, 123, 255);
+	background: rgb(255, 200, 0);
 	margin-top: 65px;
 }
 .register_button a
@@ -1447,7 +1524,7 @@ section
 {
 	width: 100%;
 	height: 100%;
-	background: #ececec;
+	background: #0bc3e4;
 }
 .search_content
 {
@@ -1468,6 +1545,7 @@ section
 .search_title
 {
 	color: #1a1a1a;
+	text-align: center;
 }
 
 /*********************************
@@ -1501,7 +1579,7 @@ input:last-of-type
 {
 	width: 100%;
 	height: 48px;
-	background: #ffb606;
+	background: #585b5c;
 	color: #FFFFFF;
 	font-size: 14px;
 	text-transform: uppercase;
@@ -1697,7 +1775,7 @@ input:last-of-type
 {
 	font-size: 48px;
 	font-weight: 700;
-	color: blue;
+	color: rgb(212, 230, 231);
 	margin-bottom: 1px;
 	line-height: 1;
 }
@@ -1705,7 +1783,7 @@ input:last-of-type
 {
 	font-size: 16px;
 	font-weight: 700;
-	color: rgb(0, 123, 255);
+	color: rgb(212, 231, 229);
 }
 .event_name a
 {

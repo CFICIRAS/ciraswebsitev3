@@ -96,6 +96,19 @@ p a
 	-o-transition: all 200ms ease;
 	transition: all 200ms ease;
 }
+/* Styles pour les animations et effets */
+.news_post {
+	opacity: 0;
+	transform: translateY(40px);
+	transition: opacity 1.3s ease, transform 2.3s ease;
+  }
+  
+  .news_post.show {
+	opacity: 1;
+	transform: translateY(0);
+  }
+  
+
 a, a:hover, a:visited, a:active, a:link
 {
 	text-decoration: none;
