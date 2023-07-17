@@ -2,11 +2,14 @@
 <html lang="en">
 <head>
 <title>CFI-CIRAS</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+<link rel="stylesheet" href="animated.css">
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 <%-include ('./includes/header')%>
 	
 	<!-- Home -->
 
-	<div class="home">
+	<div class="home animated animate__fadeInDown">
 		<div class="home_background_container prlx_parent">
 			<div class="home_background prlx" style="background-image:url(img/courses_background.jpg)"></div>
 		</div>
@@ -17,17 +20,17 @@
 
 	<!-- Popular -->
 
-	<div class="popular page_section">
+	<div class="popular page_section ">
 		<div class="container">
 			<div class="row">
 				<div class="col">
-					<div class="section_title text-center">
+					<div class="section_title text-center animated animate__fadeInTopLeft">
 						<h1>LE CFI-CIRAS PROPOSE UNE GAMME DE FORMATIONS DE QUALITÉ DANS LE DOMAINE DE L'INFORMATIQUE ET DES TECHNIQUES DE L'ADMINISTRATION EN ADÉQUATION AVEC LE MONDE PROFESSIONNEL</h1>
 					</div>
 				</div>
 			</div>
 
-			<div class="row course_boxes">
+			<div class="row course_boxes animated animate__fadeInTopLeft">
 				
 				<!-- Popular Course Item -->
 				<div class="col-lg-4 course_box">
@@ -142,6 +145,38 @@
 		</div>		
 	</div>
 <%-include ('./includes/footer')%>
+<script>
+	// Vérifier si l'élément est visible dans la vue du navigateur
+	$.fn.visible = function (partial) {
+		var $t = $(this),
+			$w = $(window),
+			viewTop = $w.scrollTop(),
+			viewBottom = viewTop + $w.height(),
+			_top = $t.offset().top,
+			_bottom = _top + $t.height(),
+			compareTop = partial === true ? _bottom : _top,
+			compareBottom = partial === true ? _top : _bottom;
+		return compareBottom <= viewBottom && compareTop >= viewTop;
+	};
+
+	// Fonction pour ajouter la classe 'animate__fadeInUp' aux éléments animés lorsqu'ils apparaissent dans la vue
+	function addAnimationClass() {
+		$(".animated").each(function (index) {
+			const $this = $(this);
+			if ($this.visible(true)) {
+				$this.addClass("animate__fadeInUp");
+			}
+		});
+	}
+
+	// Appel initial de la fonction pour les éléments déjà visibles lors du chargement de la page
+	addAnimationClass();
+
+	// Appeler la fonction lorsque l'utilisateur fait défiler la page
+	$(window).scroll(function () {
+		addAnimationClass();
+	});
+</script>
 
 </body>
 </html>

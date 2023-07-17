@@ -1,6 +1,9 @@
 <!DOCTYPE html>
 <head>
 <title>CFI-CIRAS | Acceuil</title>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <link rel="stylesheet" href="animated.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 <%-include('./includes/header')%>
 	<!-- Home -->
 
@@ -8,10 +11,10 @@
 
 		<!-- Hero Slider -->
 		<div class="hero_slider_container">
-			<div class="hero_slider owl-carousel">
+			<div class="hero_slider owl-carousel animated animate__bounceInDown">
 				
 				<!-- Hero Slide -->
-				<div class="hero_slide">
+				<div class="hero_slide ">
 					<div class="hero_slide_background" style="background-image:url(img/bg.jpg)"></div>
 					<div class="hero_slide_container d-flex flex-column align-items-center justify-content-center">
 						<div class="hero_slide_content text-center">
@@ -45,7 +48,7 @@
 
 	</div>
 
-	<div class="hero_boxes mb-4">
+	<div class="hero_boxes mb-4 animated animate__zoomInRight">
 		<div class="hero_boxes_inner">
 			<div class="container">
 				<div class="row">
@@ -81,7 +84,7 @@
 		</div>
 	</div>
 	<!-- Popular -->
-	<div class="popular page_section">
+	<div class="popular page_section animated animate__zoomIn">
 		<div class="container">
 			<div class="row">
 				<div class="col">
@@ -153,7 +156,7 @@
 		</div>		
 	</div>
 
-	<div class="milestones">
+	<div class="milestones animated animate__zoomIn">
 		<div class="container">
 		</div>
 		<div class="milestones_container">
@@ -207,7 +210,7 @@
 
 	<!-- Register -->
 
-	<div class="register">
+	<div class="register animated">
 
 		<div class="container-fluid">
 			
@@ -231,9 +234,9 @@
 					<!-- Search -->
 
 					<div class="search_section d-flex flex-column align-items-center justify-content-center">
-						<div class="search_background" style="background-image:url(img/logocisco.png);"></div>
+						<div class="search_background" style="background-image:url(img/search_background.jpg);"></div>
 						<div class="search_content text-center">
-							<h1 class="search_title">Grâce au partenariat du CFI-CIRAS et CISCO, vous pouvez vous lancer à changer ou à propulser votre carrière. La Cisco Networking Academy du CFI-CIRAS propose des cours pour préparer des certifications sur des sujets tels que La Cybersécurité et le Réseau </h1>
+							<h1 class="search_title text-justify">La Cisco Networking Academy du CFI-CIRAS propose des cours pour préparer des certifications sur des sujets tels que La Cybersécurité et le Réseau </h1>
 							<form id="search_form" class="search_form" action="post">
 								<div class="button button_1 register_button mx-auto trans_200"><a href="/inscription">Inscription</a></div>
 							</form>
@@ -247,7 +250,7 @@
 
 	<!-- Services -->
 
-	<div class="services page_section">
+	<div class="services page_section animated">
 		
 		<div class="container">
 			<div class="row">
@@ -325,7 +328,7 @@
 </div>
 
 	<!-- Testimonials -->
-	<div class="testimonials page_section">
+	<div class="testimonials page_section animated">
 		<!-- <div class="testimonials_background" style="background-image:url(img/testimonials_background.jpg)"></div> -->
 		<div class="testimonials_background_container prlx_parent">
 			<div class="milestones_background2 testimonials_background" style="background-image:url(img/temoin.png)"></div>
@@ -404,7 +407,7 @@
 
 	<!-- Events -->
 
-	<div class="events page_section">
+	<div class="events page_section animated">
 		<div class="container">
 			
 			<div class="row">
@@ -513,7 +516,7 @@
 	</div>
 	<!-- Partenaires -->
 
-	<div class="partenaires-section">
+	<div class="partenaires-section animated">
 		<h2 class="partenaires-titre">Nos Partenaires</h2>
 		<div class="partenaires-container">
 			<div class="partenaire">
@@ -547,5 +550,38 @@
 		</div>
 	</div>
 <%-include('includes/footer')%>
+<script>
+	// Vérifier si l'élément est visible dans la vue du navigateur
+	$.fn.visible = function (partial) {
+		var $t = $(this),
+			$w = $(window),
+			viewTop = $w.scrollTop(),
+			viewBottom = viewTop + $w.height(),
+			_top = $t.offset().top,
+			_bottom = _top + $t.height(),
+			compareTop = partial === true ? _bottom : _top,
+			compareBottom = partial === true ? _top : _bottom;
+		return compareBottom <= viewBottom && compareTop >= viewTop;
+	};
+
+	// Fonction pour ajouter la classe 'animate__fadeInUp' aux éléments animés lorsqu'ils apparaissent dans la vue
+	function addAnimationClass() {
+		$(".animated").each(function (index) {
+			const $this = $(this);
+			if ($this.visible(true)) {
+				$this.addClass("animate__fadeInUp");
+			}
+		});
+	}
+
+	// Appel initial de la fonction pour les éléments déjà visibles lors du chargement de la page
+	addAnimationClass();
+
+	// Appeler la fonction lorsque l'utilisateur fait défiler la page
+	$(window).scroll(function () {
+		addAnimationClass();
+	});
+</script>
 </body>
+
 </html>

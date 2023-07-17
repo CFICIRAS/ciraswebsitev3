@@ -280,13 +280,13 @@ p a
 	flex-direction: column;
 	align-items: center;
 	justify-content: center;
-	height: 110vh;
+	height: 120vh;
 	background-color: #f2f2f2;
   }
   
   .directeur-image {
 	width: 400px;
-	height: 400px;
+	height: 450px;
 	border-radius: 0%;
 	overflow: hidden;
   }
@@ -567,6 +567,7 @@ p a
 	font-family: "Arial", sans-seriff
 
 }
+
 
 
   
