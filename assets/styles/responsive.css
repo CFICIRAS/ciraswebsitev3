@@ -502,3 +502,94 @@
 {
 	
 }
+/* Styles spécifiques pour les écrans de taille 1600px */
+@media screen and (min-width: 1600px) {
+	.home_content h1 {
+	  font-size: 60px;
+	}
+  }
+  
+  /* Styles spécifiques pour les écrans de taille 1440px */
+  @media screen and (min-width: 1440px) and (max-width: 1599px) {
+	.home_content h1 {
+	  font-size: 54px;
+	}
+  }
+  
+  /* Styles spécifiques pour les écrans de taille 1280px */
+  @media screen and (min-width: 1280px) and (max-width: 1439px) {
+	.home_content h1 {
+	  font-size: 48px;
+	}
+  }
+  
+  /* Styles spécifiques pour les écrans de taille 1199px */
+  @media screen and (min-width: 1199px) and (max-width: 1279px) {
+	.home_content h1 {
+	  font-size: 42px;
+	}
+  }
+  
+  /* Styles spécifiques pour les écrans de taille 1024px */
+  @media screen and (min-width: 1024px) and (max-width: 1199px) {
+	.home_content h1 {
+	  font-size: 36px;
+	}
+  }
+  
+  /* Styles spécifiques pour les écrans de taille 991px */
+  @media screen and (min-width: 991px) and (max-width: 1023px) {
+	.home_content h1 {
+	  font-size: 30px;
+	}
+  }
+  
+  /* Styles spécifiques pour les écrans de taille 959px */
+  @media screen and (min-width: 959px) and (max-width: 990px) {
+	.home_content h1 {
+	  font-size: 28px;
+	}
+  }
+  
+  /* Styles spécifiques pour les écrans de taille 880px */
+  @media screen and (min-width: 880px) and (max-width: 958px) {
+	.home_content h1 {
+	  font-size: 26px;
+	}
+  }
+  
+  /* Styles spécifiques pour les écrans de taille 768px */
+  @media screen and (min-width: 768px) and (max-width: 879px) {
+	.home_content h1 {
+	  font-size: 24px;
+	}
+  }
+  
+  /* Styles spécifiques pour les écrans de taille 767px */
+  @media screen and (min-width: 767px) and (max-width: 767px) {
+	.home_content h1 {
+	  font-size: 22px;
+	}
+  }
+  
+  /* Styles spécifiques pour les écrans de taille 539px */
+  @media screen and (min-width: 539px) and (max-width: 767px) {
+	.home_content h1 {
+	  font-size: 20px;
+	}
+  }
+  
+  /* Styles spécifiques pour les écrans de taille 479px */
+  @media screen and (min-width: 479px) and (max-width: 538px) {
+	.home_content h1 {
+	  font-size: 18px;
+	}
+  }
+  
+  /* Styles spécifiques pour les écrans de taille 400px */
+  @media screen and (min-width: 400px) and (max-width: 478px) {
+	.home_content h1 {
+	  font-size: 16px;
+	}
+  }
+  

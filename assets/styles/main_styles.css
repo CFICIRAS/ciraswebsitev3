@@ -270,9 +270,9 @@ p a
   .directeur_text {
 	animation: slide-in 1s ease-in-out;
 	animation-delay: 0.10s;
-	font-size: 13px;
+	font-size: 16px;
 	color: #000000;
-	margin-bottom: 15px;
+	margin-bottom: 13px;
 	font-family: "Arial", sans-seriff
   }
   .directeur-section {
@@ -280,7 +280,6 @@ p a
 	flex-direction: column;
 	align-items: center;
 	justify-content: center;
-	height: 120vh;
 	background-color: #f2f2f2;
   }
   
@@ -457,7 +456,7 @@ p a
 .admission-concours-content {
 	animation: slide-in 1s ease-in-out;
 	animation-delay: 0.10s;
-	font-size: 13px;
+	font-size: 16px;
 	color: #000000;
 	margin-bottom: 15px;
 	font-family: "Arial", sans-seriff
@@ -468,7 +467,7 @@ p a
 /* Styles for Admission titles and texts */
 .admission-title {
     font-family: Arial, sans-serif;
-    font-size: 20px;
+    font-size: 32px;
     color: #000000;
     margin-bottom: 10px;
     transition: all 0.3s ease;
@@ -478,7 +477,7 @@ p a
 .admission-text {
     text-align: justify;
     transition: all 0.3s ease;
-	font-size: 13px;
+	font-size: 17px;
 	color: #000000;
 	margin-bottom: 15px;
 	font-family: "Arial", sans-seriff
@@ -1495,7 +1494,7 @@ section
 	color: #FFFFFF;
 	margin-bottom: 16px;
 	line-height: 1.63;
-	text-align: justify;
+	
 }
 .register_title:last-child
 {
