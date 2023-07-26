@@ -1,0 +1,22 @@
+/* Exemple de style pour les éléments animés */
+.animated {
+    visibility: hidden;
+}
+
+/* Classe d'animation pour apparition avec un délai */
+.animate__fadeInUp {
+    animation: animate__fadeInUp 1s forwards;
+}
+
+
+/* Autres classes d'animation (vérifiez les noms dans anime.css) */
+/*
+.animate__fadeInDown {}
+.animate__fadeInLeft {}
+.animate__fadeInRight {}
+.animate__fadeIn {}
+.animate__zoomIn {}
+.animate__slideInDown {}
+.animate__slideInLeft {}
+.animate__slideInRight {}
+*/
