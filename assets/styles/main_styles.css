@@ -264,13 +264,16 @@ p a
 	font-size: 19px;
 	color: #000000;
 	margin-bottom: 15px;
+	text-align : justify ;
 	font-family: "Arial", sans-seriff
+	
 
   }
   .directeur_text {
 	animation: slide-in 1s ease-in-out;
 	animation-delay: 0.10s;
 	font-size: 16px;
+	text-align : justify ;
 	color: #000000;
 	margin-bottom: 13px;
 	font-family: "Arial", sans-seriff
@@ -286,7 +289,7 @@ p a
   .directeur-image {
 	width: 400px;
 	height: 450px;
-	border-radius: 0%;
+	border-radius: 2%;
 	overflow: hidden;
   }
   
@@ -313,7 +316,7 @@ p a
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	margin: 0 20px;
+	margin: 20px;
   }
   
   .image-container img {
