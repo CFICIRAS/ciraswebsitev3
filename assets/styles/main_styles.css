@@ -103,6 +103,13 @@ p a
 	-o-transition: all 200ms ease;
 	transition: all 200ms ease;
 }
+.teacher_image {
+    width: 340px; /* Remplace la valeur par la taille souhaitée en pixels */
+    height: 450px; /* Remplace la valeur par la taille souhaitée en pixels */
+   
+    border-radius: 2%; /* Pour obtenir des images rondes, si désiré */
+}
+
 .partenaires-section {
 	text-align: center;
 	margin-bottom: 20px;
