@@ -7,6 +7,42 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
 <link rel="stylesheet" href="animated.css">
 <%-include ('./includes/header')%>
+<style>
+  /* Ajout des styles CSS personnalisés */
+  body {
+    color: black;
+    font-family: Arial, sans-serif;
+  }
+
+  .section_title {
+    text-align: center;
+  }
+
+  .table {
+      margin-top: 20px;
+      font-family: Arial, sans-serif;
+      background-color: #f8f9fa;
+      width: 100%;
+      border-collapse: collapse;
+    }
+
+  .table th {
+    font-weight: bold;
+    font-family: "Arial Black", sans-serif;
+    font-size: 20px;
+  }
+
+  .table td {
+    font-family: Arial, sans-serif;
+  }
+  .table thead {
+      background-color: #007bff;
+      color: white;
+    }
+    .table th, .table td {
+      border: 1px solid #dee2e6;
+    }
+</style>
 </head>
 <body>
 
@@ -36,336 +72,346 @@
 			</div>
 			<div class="row">
 				<div class="col-lg-12">
-					<p class="presentation-corps_text">Bienvenue au CFI-CIRAS une référence en Informatique au Congo !
-
-                    </p>
-                    <p class="presentation-corps_text"> Voici les trois catégories de corps enseignant présentes dans notre institution 
-
-                    </p>
-					<p class="presentation-corps_text">Chargés d'enseignement :
-                        Les Chargés d'enseignement sont des membres du corps professoral qui ont une expertise avancée dans des domaines spécifiques de l'informatique. Ils sont responsables de la conception et de la mise en œuvre des programmes d'enseignement, ainsi que de la supervision des projets de recherche pour les étudiants. Ils peuvent également encadrer les étudiants lors de stages et de projets académiques.</p>
-					<p class="presentation-corps_text">Chargés de cours :
-                        Les Chargés de cours sont des enseignants qui sont généralement engagés à temps partiel ou pour des cours spécifiques. Ils sont choisis pour leurs connaissances pratiques et leur expérience dans des domaines spécifiques de l'informatique. Leur rôle principal est de dispenser des cours magistraux, des travaux pratiques ou des ateliers pour les étudiants. Ils apportent souvent un point de vue pratique et des exemples concrets issus de leur expérience professionnelle.</p>
-					<p class="presentation-corps_text">Chargés d'enseignement technique et professionnel :
-                        Les Chargés d'enseignement technique et professionnel sont des experts de l'industrie informatique qui sont recrutés pour apporter une expérience pratique et une connaissance approfondie du monde du travail aux étudiants. Ils sont responsables de la formation technique et de l'apprentissage des compétences pratiques nécessaires pour réussir dans des environnements professionnels spécifiques. Leur rôle est d'aider les étudiants à se préparer pour leur future carrière en leur enseignant des compétences spécifiques, en organisant des séminaires et en facilitant des projets pratiques en partenariat avec des entreprises.</p>
+					<p class="presentation-corps_text">Bienvenue au CFI-CIRAS une référence en Informatique au Congo !</p>
+                    <p class="presentation-corps_text">Voici les trois catégories de corps enseignant présentes dans notre institution :</p>
+					<p class="presentation-corps_text"><strong>Chargés d'enseignement :</strong> Les Chargés d'enseignement sont des membres du corps professoral qui ont une expertise avancée dans des domaines spécifiques de l'informatique. Ils sont responsables de la conception et de la mise en œuvre des programmes d'enseignement, ainsi que de la supervision des projets de recherche pour les étudiants. Ils peuvent également encadrer les étudiants lors de stages et de projets académiques.</p>
+					<p class="presentation-corps_text"><strong>Chargés de cours :</strong> Les Chargés de cours sont des enseignants qui sont généralement engagés à temps partiel ou pour des cours spécifiques. Ils sont choisis pour leurs connaissances pratiques et leur expérience dans des domaines spécifiques de l'informatique. Leur rôle principal est de dispenser des cours magistraux, des travaux pratiques ou des ateliers pour les étudiants. Ils apportent souvent un point de vue pratique et des exemples concrets issus de leur expérience professionnelle.</p>
+					<p class="presentation-corps_text"><strong>Chargés d'enseignement technique et professionnel :</strong> Les Chargés d'enseignement technique et professionnel sont des experts de l'industrie informatique qui sont recrutés pour apporter une expérience pratique et une connaissance approfondie du monde du travail aux étudiants. Ils sont responsables de la formation technique et de l'apprentissage des compétences pratiques nécessaires pour réussir dans des environnements professionnels spécifiques. Leur rôle est d'aider les étudiants à se préparer pour leur future carrière en leur enseignant des compétences spécifiques, en organisant des séminaires et en facilitant des projets pratiques en partenariat avec des entreprises.</p>
 					<p class="presentation-corps_text">L'Université d'Informatique met un point d'honneur à avoir une équipe enseignante diversifiée, composée de chercheurs, d'enseignants expérimentés et de professionnels de l'industrie, afin d'offrir aux étudiants une formation complète et de qualité pour leur permettre de réussir dans le domaine de l'informatique.</p>
 				</div>
 			</div>
 		</div>
 	</div>
-
-    <!-- Chargés d'Enseignement -->
-    <div class="chargés-enseignement-section page_section animated animate__fadeInUp">
-        <div class="container">
-            <div class="row animated animate__fadeInUp">
-                <div class="col-lg-12">
-                    <div class="section_title text-center">
-                        <h2>Chargés d'Enseignement</h2>
-                    </div>
-                </div>
-            </div>
-            <div class="row animated animate__fadeInUp">
-                <div class="col-lg-3 image-column">
-                    <img src="img/teacher_1.jpg" alt="Image 1">
-                    <div class="image-name">EKONDZI ALAIN</div>
-                    <div class="image-name">Enseignant 1</div>
-                </div>
-                <div class="col-lg-3 image-column">
-                    <img src="img/teacher_1.jpg" alt="Image 1">
-                    <div class="image-name">AMPINI DIEUDONNÉ</div>
-                    <div class="image-name">Enseignant 1</div>
-                </div>
-                <div class="col-lg-3 image-column">
-                    <img src="img/teacher_1.jpg" alt="Image 1">
-                    <div class="image-name">OKO-OBIAKOUA RICKY</div>
-                    <div class="image-name">Enseignant 1</div>
-                </div>
-                <div class="col-lg-3 image-column">
-                    <img src="img/teacher_1.jpg" alt="Image 1">
-                    <div class="image-name">NGOUBOU ROCH CORNEILLE</div>
-                    <div class="image-name">Enseignant 1</div>
-                </div>
-                <div class="col-lg-3 image-column">
-                    <img src="img/teacher_1.jpg" alt="Image 1">
-                    <div class="image-name">MALOUATA RODNELLIN ONESIME</div>
-                    <div class="image-name">Enseignant 1</div>
-                </div>
-                <div class="col-lg-3 image-column">
-                    <img src="img/teacher_1.jpg" alt="Image 1">
-                    <div class="image-name">LANGA FRANCK</div>
-                    <div class="image-name">Enseignant 1</div>
-                </div>
-                <div class="col-lg-3 image-column">
-                    <img src="img/teacher_1.jpg" alt="Image 1">
-                    <div class="image-name">BANGO ANGE</div>
-                    <div class="image-name">Enseignant 1</div>
-                </div>
-                <div class="col-lg-3 image-column">
-                    <img src="img/teacher_1.jpg" alt="Image 1">
-                    <div class="image-name">OBILANGOUNDA</div>
-                    <div class="image-name">Enseignant 1</div>
-                </div>
-                <div class="col-lg-3 image-column">
-                    <img src="img/teacher_1.jpg" alt="Image 1">
-                    <div class="image-name">YOMBI STEVEN</div>
-                    <div class="image-name">Enseignant 1</div>
-                </div>
-                <div class="col-lg-3 image-column">
-                    <img src="img/teacher_1.jpg" alt="Image 1">
-                    <div class="image-name">NGOLO KIVIE</div>
-                    <div class="image-name">Enseignant 1</div>
-                </div>
-                <div class="col-lg-3 image-column">
-                    <img src="img/teacher_1.jpg" alt="Image 1">
-                    <div class="image-name">   
-                        MFOUTOU PRISCA AUBAIN</div>
-                    <div class="image-name">Enseignant 1</div>
-                </div>
-                <div class="col-lg-3 image-column">
-                    <img src="img/teacher_1.jpg" alt="Image 1">
-                    <div class="image-name">KIBANGOU GUYET NEULORD</div>
-                    <div class="image-name">Enseignant 1</div>
-                </div>
-                <div class="col-lg-3 image-column">
-                    <img src="img/teacher_1.jpg" alt="Image 1">
-                    <div class="image-name">OBAMI YALA CHRIST</div>
-                    <div class="image-name">Enseignant 1</div>
-                </div>
-                <!-- Ajouter les autres images et noms ici -->
-            </div>
-            <!-- Ajouter les autres colonnes ici -->
+  <!-- Tableau des Chargés d'Enseignement -->
+  <div class="chargés-enseignement-section page_section animated animate__fadeInUp">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="section_title text-center animated animate__fadeInTopLeft">
+            <h2>Chargés d'Enseignement</h2>
+          </div>
         </div>
-    </div>
-
-    <!-- Chargés de Cours -->
-    <div class="chargés-cours-section page_section animated animate__fadeInUp">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12">
-                    <div class="section_title text-center">
-                        <h2>Chargés de Cours</h2>
-                    </div>
-                </div>
-            </div>
-            <div class="row animated animate__fadeInUp">
-                <div class="col-lg-3 image-column">
-                    <img src="img/teacher_1.jpg" alt="Image 1">
-                    <div class="image-name">AMBERE ACHILLE</div>
-                </div>
-                <div class="col-lg-3 image-column">
-                    <img src="img/teacher_1.jpg" alt="Image 1">
-                    <div class="image-name">ANDZOUANA ELSIE DEOVIE</div>
-                </div>
-                <div class="col-lg-3 image-column">
-                    <img src="img/teacher_1.jpg" alt="Image 1">
-                    <div class="image-name">BAKOU LONGO OLIVIER</div>
-                </div>
-                <div class="col-lg-3 image-column">
-                    <img src="img/teacher_1.jpg" alt="Image 1">
-                    <div class="image-name">BANZOUZI NGOLA</div>
-                </div>
-                <div class="col-lg-3 image-column">
-                    <img src="img/teacher_1.jpg" alt="Image 1">
-                    <div class="image-name">BASSINDIKILA GILLES</div>
-                </div>
-                <div class="col-lg-3 image-column">
-                    <img src="img/teacher_1.jpg" alt="Image 1">
-                    <div class="image-name">BIYELE FRANÇOIS</div>
-                </div>
-                <div class="col-lg-3 image-column">
-                    <img src="img/teacher_1.jpg" alt="Image 1">
-                    <div class="image-name">BONGUILI PAUL</div>
-                </div>
-                <div class="col-lg-3 image-column">
-                    <img src="img/teacher_1.jpg" alt="Image 1">
-                    <div class="image-name">EBA EMILE</div>
-                </div>
-                <div class="col-lg-3 image-column">
-                    <img src="img/teacher_1.jpg" alt="Image 1">
-                    <div class="image-name">EBOMBO DESTIN</div>
-                </div>
-                <div class="col-lg-3 image-column">
-                    <img src="img/teacher_1.jpg" alt="Image 1">
-                    <div class="image-name">EWOUYA ROCHY</div>
-                </div>
-                <div class="col-lg-3 image-column">
-                    <img src="img/teacher_1.jpg" alt="Image 1">
-                    <div class="image-name">EYANGOLO Vivien</div>
-                </div>
-                <div class="col-lg-3 image-column">
-                    <img src="img/teacher_1.jpg" alt="Image 1">
-                    <div class="image-name">GAKOSSO OKANDZE OFOUNGA</div>
-                </div>
-                <div class="col-lg-3 image-column">
-                    <img src="img/teacher_1.jpg" alt="Image 1">
-                    <div class="image-name">   
-                        GANKA LAMETRIE BONHEUR</div>
-                </div>
-                <div class="col-lg-3 image-column">
-                    <img src="img/teacher_1.jpg" alt="Image 1">
-                    <div class="image-name">GOMA SERGE</div>
-                </div>
-                <div class="col-lg-3 image-column">
-                    <img src="img/teacher_1.jpg" alt="Image 1">
-                    <div class="image-name">GUEKORAT HARDING LANDRY</div>
-                </div>
-                <div class="col-lg-3 image-column">
-                    <img src="img/teacher_1.jpg" alt="Image 1">
-                    <div class="image-name">HOUAMANABIO ADOLPHE</div>
-                </div>
-                <div class="col-lg-3 image-column">
-                    <img src="img/teacher_1.jpg" alt="Image 1">
-                    <div class="image-name">IBARA KIEBE MARIUS</div>
-                </div>
-                <div class="col-lg-3 image-column">
-                    <img src="img/teacher_1.jpg" alt="Image 1">
-                    <div class="image-name">ILOKI NGATSONGO ALPHONSE</div>
-                </div>
-                <div class="col-lg-3 image-column">
-                    <img src="img/teacher_1.jpg" alt="Image 1">
-                    <div class="image-name">INIE YVONNE</div>
-                </div>
-                <div class="col-lg-3 image-column">
-                    <img src="img/teacher_1.jpg" alt="Image 1">
-                    <div class="image-name">ITOUA CLAVER</div>
-                </div>
-                <div class="col-lg-3 image-column">
-                    <img src="img/teacher_1.jpg" alt="Image 1">
-                    <div class="image-name">KESSAKI MABA NGAYOKO</div>
-                </div>
-                <div class="col-lg-3 image-column">
-                    <img src="img/teacher_1.jpg" alt="Image 1">
-                    <div class="image-name">KIFOUANI DIDIER</div>
-                </div>
-                <div class="col-lg-3 image-column">
-                    <img src="img/teacher_1.jpg" alt="Image 1">
-                    <div class="image-name">KISSITA SAMUEL</div>
-                </div>
-                <div class="col-lg-3 image-column">
-                    <img src="img/teacher_1.jpg" alt="Image 1">
-                    <div class="image-name">KITOKO ROLAND ALEXIS</div>
-                </div>
-                <div class="col-lg-3 image-column">
-                    <img src="img/teacher_1.jpg" alt="Image 1">
-                    <div class="image-name">   
-                        LOEMBA PANGOUD RAYMOND FRANCK</div>
-                </div>
-                <div class="col-lg-3 image-column">
-                    <img src="img/teacher_1.jpg" alt="Image 1">
-                    <div class="image-name">   
-                        MAHOUENE VINCENT</div>
-                </div>
-                <div class="col-lg-3 image-column">
-                    <img src="img/teacher_1.jpg" alt="Image 1">
-                    <div class="image-name">MEBIAMA GÉDÉON</div>
-                </div>
-                <div class="col-lg-3 image-column">
-                    <img src="img/teacher_1.jpg" alt="Image 1">
-                    <div class="image-name">   
-                        MIASSOUAMINA JEAN LÉON</div>
-                </div>
-                <div class="col-lg-3 image-column">
-                    <img src="img/teacher_1.jpg" alt="Image 1">
-                    <div class="image-name">MIENDOUDI FRANÇOIS</div>
-                </div>
-                <div class="col-lg-3 image-column">
-                    <img src="img/teacher_1.jpg" alt="Image 1">
-                    <div class="image-name">MIKOLA MALONGA TED</div>
-                </div>
-                <div class="col-lg-3 image-column">
-                    <img src="img/teacher_1.jpg" alt="Image 1">
-                    <div class="image-name">MOUABA ALAIN</div>
-                </div>
-                <div class="col-lg-3 image-column">
-                    <img src="img/teacher_1.jpg" alt="Image 1">
-                    <div class="image-name">MOUANGOU SIMON ROMUALD</div>
-                </div>
-                <div class="col-lg-3 image-column">
-                    <img src="img/teacher_1.jpg" alt="Image 1">
-                    <div class="image-name">MOUSSIESSI FRANÇOIS</div>
-                </div>
-                <div class="col-lg-3 image-column">
-                    <img src="img/teacher_1.jpg" alt="Image 1">
-                    <div class="image-name">NDINGA ATSONO J.B</div>
-                </div>
-                <div class="col-lg-3 image-column">
-                    <img src="img/teacher_1.jpg" alt="Image 1">
-                    <div class="image-name">NGALA JEANNE</div>
-                </div>
-                <div class="col-lg-3 image-column">
-                    <img src="img/teacher_1.jpg" alt="Image 1">
-                    <div class="image-name">NGOLALI Victor</div>
-                </div>
-                <div class="col-lg-3 image-column">
-                    <img src="img/teacher_1.jpg" alt="Image 1">
-                    <div class="image-name">NGOUNGA M'VOULA</div>
-                </div>
-                <div class="col-lg-3 image-column">
-                    <img src="img/teacher_1.jpg" alt="Image 1">
-                    <div class="image-name">NGUIE RIVEL</div>
-                </div>
-                <div class="col-lg-3 image-column">
-                    <img src="img/teacher_1.jpg" alt="Image 1">
-                    <div class="image-name">NKELETELA ARSÈNE</div>
-                </div>
-                <div class="col-lg-3 image-column">
-                    <img src="img/teacher_1.jpg" alt="Image 1">
-                    <div class="image-name">OKANDO FÉLIX</div>
-                </div>
-                <div class="col-lg-3 image-column">
-                    <img src="img/teacher_1.jpg" alt="Image 1">
-                    <div class="image-name">   
-                        ONDONGO PRINCE</div>
-                </div>
-                <div class="col-lg-3 image-column">
-                    <img src="img/teacher_1.jpg" alt="Image 1">
-                    <div class="image-name">   
-                        OQUEMBA OLAF</div>
-                </div>
-                <div class="col-lg-3 image-column">
-                    <img src="img/teacher_1.jpg" alt="Image 1">
-                    <div class="image-name">OYERE MOREL</div>
-                </div>
-                <div class="col-lg-3 image-column">
-                    <img src="img/teacher_1.jpg" alt="Image 1">
-                    <div class="image-name">   
-                        PANGUI MARTIAL</div>
-                </div>
-                <div class="col-lg-3 image-column">
-                    <img src="img/teacher_1.jpg" alt="Image 1">
-                    <div class="image-name">   
-                        TCHITEMBO JEAN FRANÇOIS</div>
-                </div>
-                <div class="col-lg-3 image-column">
-                    <img src="img/teacher_1.jpg" alt="Image 1">
-                    <div class="image-name">TCHITEMBO AUGUSTIN</div>
-                </div>
-               <!-- Ajouter les autres images et noms ici -->
-            </div>
-            <!-- Ajouter les autres colonnes ici -->
+      </div>
+      <div class="row">
+        <div class="col-lg-12">
+          <table class="table table-bordered  animated animate__fadeInUp">
+            <thead>
+              <tr>
+                <th style="text-align: center;">Enseignant</th>
+                <th style="text-align: center;">Qualifications</th>
+              </tr>
+            </thead>
+            <tbody>
+              <!-- Ajouter les noms des enseignants ici -->
+              <tr>
+                <td style="font-weight: bold;">EKONDZI ALAIN</td>
+                <td>Docteur en Intelligence Artificielle</td>
+              </tr>
+              <tr>
+                <td style="font-weight: bold;">AMPINI DIEUDONNÉ</td>
+                <td>AMPINI DIEUDONNÉ</td>
+              </tr>
+              <tr>
+                <td style="font-weight: bold;">OKO-OBIAKOUA RICKY</td>
+                <td>OKO-OBIAKOUA RICKY</td>
+              </tr>
+              <tr>
+                <td style="font-weight: bold;">NGOUBOU ROCH CORNEILLE</td>
+                <td>NGOUBOU ROCH CORNEILLE</td>
+              </tr>
+              <tr>
+                <td style="font-weight: bold;">MALOUATA RODNELLIN ONESIME</td>
+                <td>MALOUATA RODNELLIN ONESIME</td>
+              </tr>
+              <tr>
+                <td style="font-weight: bold;">LANGA FRANCK</td>
+                <td>LANGA FRANCK</td>
+              </tr>
+              <tr>
+                <td style="font-weight: bold;">BANGO ANGE</td>
+                <td>BANGO ANGE</td>
+              </tr>
+              <tr>
+                <td style="font-weight: bold;">OBILANGOUNDA DANNIEL</td>
+                <td>OBILANGOUNDA DANNIEL</td>
+              </tr>
+              <tr>
+                <td style="font-weight: bold;">YOMBI STEVEN</td>
+                <td>YOMBI STEVEN</td>
+              </tr>
+              <tr>
+                <td style="font-weight: bold;">NGOLO KIVIE</td>
+                <td>NGOLO KIVIE</td>
+              </tr>
+              <tr>
+                <td style="font-weight: bold;">MFOUTOU PRISCA AUBAIN</td>
+                <td>MFOUTOU PRISCA AUBAIN</td>
+              </tr>
+              <tr>
+                <td style="font-weight: bold;">KIBANGOU GUYET NEULORD</td>
+                <td>KIBANGOU GUYET NEULORD</td>
+              </tr>
+              <tr>
+                <td style="font-weight: bold;">OBAMI YALA CHRIST</td>
+                <td>OBAMI YALA CHRIST</td>
+              </tr>
+            </tbody>
+          </table>
         </div>
+      </div>
     </div>
+  </div>
 
-    <!-- Chargés d'Enseignement Technique et Professionnel -->
-    <div class="chargés-technique-professionnel-section page_section animated animate__fadeInUp">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12">
-                    <div class="section_title text-center">
-                        <h2>Chargés d'Enseignement Technique et Professionnel</h2>
-                    </div>
-                </div>
-            </div>
-            <div class="row animated animate__fadeInUp">
-                <div class="col-lg-3 image-column">
-                    <img src="img/teacher_1.jpg" alt="Image 1">
-                    <div class="image-name">Enseignant 1</div>
-                </div>
-                <!-- Ajouter les autres images et noms ici -->
-            </div>
-            <!-- Ajouter les autres colonnes ici -->
+<!-- Tableau des Chargés de Cours -->
+<div class="chargés-cours-section page_section animated animate__fadeInUp">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="section_title text-center animated animate__fadeInTopLeft">
+            <h2>Chargés de Cours</h2>
+          </div>
         </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-12">
+          <table class="table table-bordered">
+            <thead>
+              <tr>
+                <th style="text-align: center;">Enseignant</th>
+                <th style="text-align: center;">Qualifications</th>
+              </tr>
+            </thead>
+            <tbody>
+              <!-- Ajouter les noms des enseignants ici -->
+              <tr>
+                <td style="font-weight: bold;">AMBERE ACHILLE</td>
+                <td>AMBERE ACHILLE</td>
+              </tr>
+              <tr>
+                <td style="font-weight: bold;">ANDZOUANA ELSIE DEOVIE</td>
+                <td>ANDZOUANA ELSIE DEOVIE</td>
+              </tr>
+              <tr>
+                <td style="font-weight: bold;">BAKOU LONGO OLIVIER</td>
+                <td>BAKOU LONGO OLIVIER</td>
+              </tr>
+              <tr>
+                <td style="font-weight: bold;">BANZOUZI NGOLA</td>
+                <td>BANZOUZI NGOLA</td>
+              </tr>
+              <tr>
+                <td style="font-weight: bold;">BASSINDIKILA GILLES</td>
+                <td>BASSINDIKILA GILLES</td>
+              </tr>
+              <tr>
+                <td style="font-weight: bold;">BIYELE FRANÇOIS</td>
+                <td>BIYELE FRANÇOIS</td>
+              </tr>
+              <tr>
+                <td style="font-weight: bold;">BONGUILI PAUL</td>
+                <td>BONGUILI PAUL</td>
+              </tr>
+              <tr>
+                <td style="font-weight: bold;">EBA EMILE</td>
+                <td>EBA EMILE</td>
+              </tr>
+              <tr>
+                <td style="font-weight: bold;">EBOMBO DESTIN</td>
+                <td>EBOMBO DESTIN</td>
+              </tr>
+              <tr>
+                <td style="font-weight: bold;">EWOUYA ROCHY</td>
+                <td>EWOUYA ROCHY</td>
+              </tr>
+              <tr>
+                <td style="font-weight: bold;">EYANGOLO VIVIEN</td>
+                <td>EYANGOLO VIVIEN</td>
+              </tr>
+              <tr>
+                <td style="font-weight: bold;">GAKOSSO OKANDZE OFOUNGA</td>
+                <td>GAKOSSO OKANDZE OFOUNGA</td>
+              </tr>
+              <tr>
+                <td style="font-weight: bold;">GANKA LAMETRIE BONHEUR</td>
+                <td>GANKA LAMETRIE BONHEUR</td>
+              </tr>
+              <tr>
+                <td style="font-weight: bold;">GOMA SERGE</td>
+                <td>GOMA SERGE</td>
+              </tr>
+              <tr>
+                <td style="font-weight: bold;">GUEKORAT HARDING LANDRY</td>
+                <td>GUEKORAT HARDING LANDRY</td>
+              </tr>
+              <tr>
+                <td style="font-weight: bold;">HOUAMANABIO ADOLPHE</td>
+                <td>HOUAMANABIO ADOLPHE</td>
+              </tr>
+              <tr>
+                <td style="font-weight: bold;">IBARA KIEBE MARIUS</td>
+                <td>IBARA KIEBE MARIUS</td>
+              </tr>
+              <tr>
+                <td style="font-weight: bold;">ILOKI NGATSONGO ALPHONSE</td>
+                <td>ILOKI NGATSONGO ALPHONSE</td>
+              </tr>
+              <tr>
+                <td style="font-weight: bold;">INIE YVONNE</td>
+                <td>INIE YVONNE</td>
+              </tr>
+              <tr>
+                <td style="font-weight: bold;">ITOUA CLAVER</td>
+                <td>ITOUA CLAVER</td>
+              </tr>
+              <tr>
+                <td style="font-weight: bold;">KESSAKI MABA NGAYOKO</td>
+                <td>KESSAKI MABA NGAYOKO</td>
+              </tr>
+              <tr>
+                <td style="font-weight: bold;">KIFOUANI DIDIER</td>
+                <td>KIFOUANI DIDIER</td>
+              </tr>
+              <tr>
+                <td style="font-weight: bold;">KISSITA SAMUEL</td>
+                <td>KISSITA SAMUEL</td>
+              </tr>
+              <tr>
+                <td style="font-weight: bold;">KITOKO ROLAND ALEXIS</td>
+                <td>KITOKO ROLAND ALEXIS</td>
+              </tr>
+              <tr>
+                <td style="font-weight: bold;">LOEMBA PANGOUD RAYMOND FRANCK</td>
+                <td>LOEMBA PANGOUD RAYMOND FRANCK</td>
+              </tr>
+              <tr>
+                <td style="font-weight: bold;">MAHOUENE VINCENT</td>
+                <td>MAHOUENE VINCENT</td>
+              </tr>
+              <tr>
+                <td style="font-weight: bold;">MEBIAMA GÉDÉON</td>
+                <td>MEBIAMA GÉDÉON</td>
+              </tr>
+              <tr>
+                <td style="font-weight: bold;">MIASSOUAMINA JEAN LÉON</td>
+                <td>MIASSOUAMINA JEAN LÉON</td>
+              </tr>
+              <tr>
+                <td style="font-weight: bold;">MIENDOUDI FRANÇOIS</td>
+                <td>MIENDOUDI FRANÇOIS</td>
+              </tr>
+              <tr>
+                <td style="font-weight: bold;">MIKOLA MALONGA TED</td>
+                <td>MIKOLA MALONGA TED</td>
+              </tr>
+              <tr>
+                <td style="font-weight: bold;">MOUABA ALAIN</td>
+                <td>MOUABA ALAIN</td>
+              </tr>
+              <tr>
+                <td style="font-weight: bold;">MOUANGOU SIMON ROMUALD</td>
+                <td>MOUANGOU SIMON ROMUALD</td>
+              </tr>
+              <tr>
+                <td style="font-weight: bold;">MOUSSIESSI FRANÇOIS</td>
+                <td>MOUSSIESSI FRANÇOIS</td>
+              </tr>
+              <tr>
+                <td style="font-weight: bold;">NDINGA ATSONO J.B</td>
+                <td>NDINGA ATSONO J.B</td>
+              </tr>
+              <tr>
+                <td style="font-weight: bold;">NGALA JEANNE</td>
+                <td>NGALA JEANNE</td>
+              </tr>
+              <tr>
+                <td style="font-weight: bold;">NGOLALI Victor</td>
+                <td>NGOLALI Victor</td>
+              </tr>
+              <tr>
+                <td style="font-weight: bold;">NGOUNGA M'VOULA</td>
+                <td>NGOUNGA M'VOULA</td>
+              </tr>
+              <tr>
+                <td style="font-weight: bold;">NGUIE RIVEL</td>
+                <td>NGUIE RIVEL</td>
+              </tr>
+              <tr>
+                <td style="font-weight: bold;">NKELETELA ARSÈNE</td>
+                <td>NKELETELA ARSÈNE</td>
+              </tr>
+              <tr>
+                <td style="font-weight: bold;">OKANDO FÉLIX</td>
+                <td>OKANDO FÉLIX</td>
+              </tr>
+              <tr>
+                <td style="font-weight: bold;">ONDONGO PRINCE</td>
+                <td>ONDONGO PRINCE</td>
+              </tr>
+              <tr>
+                <td style="font-weight: bold;">OQUEMBA OLAF</td>
+                <td>OQUEMBA OLAF</td>
+              </tr>
+              <tr>
+                <td style="font-weight: bold;">OYERE MOREL</td>
+                <td>OYERE MOREL</td>
+              </tr>
+              <tr>
+                <td style="font-weight: bold;">PANGUI MARTIAL</td>
+                <td>PANGUI MARTIAL</td>
+              </tr>
+              <tr>
+                <td style="font-weight: bold;">TCHITEMBO JEAN FRANÇOIS</td>
+                <td>TCHITEMBO JEAN FRANÇOIS</td>
+              </tr>
+              <tr>
+                <td style="font-weight: bold;">TCHITEMBO AUGUSTIN</td>
+                <td>TCHITEMBO AUGUSTIN</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
     </div>
+  </div>
+  
+
+  <!-- Tableau des Chargés d'Enseignement Technique et Professionnel -->
+  <div class="chargés-technique-professionnel-section page_section animated animate__fadeInUp">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="section_title text-center animated animate__fadeInTopLeft">
+            <h2>Chargés d'Enseignement Technique et Professionnel</h2>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-12">
+          <table class="table table-bordered">
+            <thead>
+              <tr>
+                <th style="text-align: center;">Enseignant</th>
+                <th style="text-align: center;">Qualifications</th>
+              </tr>
+            </thead>
+            <tbody>
+              <!-- Ajouter les noms des enseignants ici -->
+              <tr>
+                <td style="font-weight: bold;">Enseignant 1</td>
+                <td>Qualification 1</td>
+              </tr>
+              <tr>
+                <td style="font-weight: bold;">Enseignant 2</td>
+                <td>Qualification 2</td>
+              </tr>
+              <!-- Ajouter les autres enseignants ici -->
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </div>
+
 <%-include ('./includes/footer')%>
 
 </body>
