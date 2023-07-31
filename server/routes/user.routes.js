@@ -14,6 +14,14 @@ userRoute.get('/inscription', (req,res)=>{
     res.render('inscription', 
                 {page_name: 'inscription'})
 })
+userRoute.get('/Calendrier', (req,res)=>{
+    res.render('Calendrier', 
+                {page_name: 'Calendrier'})
+})
+userRoute.get('/Cisco', (req,res)=>{
+    res.render('Cisco', 
+                {page_name: 'Cisco'})
+})
 userRoute.get('/formation', (req,res)=>{
     res.render('courses', 
                 {page_name: 'formation'})
@@ -54,6 +62,7 @@ userRoute.get('/personnel', (req,res)=>{
 userRoute.get('/formation/infogestion', (req,res)=>{
     res.render('_infogest', {page_name: 'formation'})
 }) // Route info de informatique gestion
+
 
 userRoute.get('/formation/infogenielogiciel', (req,res)=>{
     res.render('_infogl', {page_name: 'formation'})
