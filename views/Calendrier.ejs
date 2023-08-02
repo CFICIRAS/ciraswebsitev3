@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>CFI-CIRAS</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <link rel="stylesheet" href="animated.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <%-include ('./includes/header')%>
+    <style>
+        /* Add custom styles here */
+        body {
+            color: black;
+        }
+
+        .section_title {
+            font-family: Arial, sans-serif;
+            font-weight: bold;
+            font-size: 24px;
+        }
+
+        .table {
+            margin: 0 auto;
+            width: 100%;
+            font-family: Arial, sans-serif;
+            background-color: #f8f9fa;
+            border-collapse: collapse;
+        }
+
+        .table th,
+        .table td {
+            border: 3px solid #918c8cd0;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .table thead {
+            background-color: #ff5e00d4;
+            color: rgb(255, 255, 255);
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Home -->
+
+    <div class="home animated animate__fadeInDown">
+        <div class="home_background_container prlx_parent">
+            <div class="home_background prlx" style="background-image:url(img/Michaelagence9.jpg)"></div>
+        </div>
+        <div class="home_content">
+            <h1>Calendrier Académique</h1>
+        </div>
+    </div>
+
+    <!-- Popular -->
+
+    <div class="popular page_section">
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <div class="section_title text-center animated animate__fadeInTopLeft">
+                        <h1>Calendrier académique</h1>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <table class="table animated animate__fadeInUp">
+                        <thead>
+                            <tr>
+                                <th>Mois</th>
+                                <th>Événement</th>
+                                <th>Date</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Septembre</td>
+                                <td>Rentrée académique</td>
+                                <td>1er septembre 2023</td>
+                            </tr>
+                            <tr>
+                                <td>Octobre</td>
+                                <td>Examen trimestriel</td>
+                                <td>15 octobre 2023</td>
+                            </tr>
+                            <tr>
+                                <td>Décembre</td>
+                                <td>Fin du premier trimestre</td>
+                                <td>20 décembre 2023</td>
+                            </tr>
+                            <tr>
+                                <td>Janvier</td>
+                                <td>Rentrée du deuxième trimestre</td>
+                                <td>5 janvier 2024</td>
+                            </tr>
+                            <tr>
+                                <td>Mars</td>
+                                <td>Examen semestriel</td>
+                                <td>15 mars 2024</td>
+                            </tr>
+                            <tr>
+                                <td>Juin</td>
+                                <td>Fin de l'année académique</td>
+                                <td>30 juin 2024</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <%-include ('./includes/footer')%>
+    <script>
+        // Vérifier si l'élément est visible dans la vue du navigateur
+        $.fn.visible = function (partial) {
+            var $t = $(this),
+                $w = $(window),
+                viewTop = $w.scrollTop(),
+                viewBottom = viewTop + $w.height(),
+                _top = $t.offset().top,
+                _bottom = _top + $t.height(),
+                compareTop = partial === true ? _bottom : _top,
+                compareBottom = partial === true ? _top : _bottom;
+            return compareBottom <= viewBottom && compareTop >= viewTop;
+        };
+
+        // Fonction pour ajouter la classe 'animate__fadeInUp' aux éléments animés lorsqu'ils apparaissent dans la vue
+        function addAnimationClass() {
+            $(".animated").each(function (index) {
+                const $this = $(this);
+                if ($this.visible(true)) {
+                    $this.addClass("animate__fadeInUp");
+                }
+            });
+        }
+
+        // Appel initial de la fonction pour les éléments déjà visibles lors du chargement de la page
+        addAnimationClass();
+
+        // Appeler la fonction lorsque l'utilisateur fait défiler la page
+        $(window).scroll(function () {
+            addAnimationClass();
+        });
+    </script>
+
+</body>
+
+</html>
