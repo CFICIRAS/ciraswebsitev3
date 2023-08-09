@@ -4,12 +4,12 @@
 /* Composition du dossier */
 .composition-dossier-section {
     position: relative;
-    background-image: url(/img/dossier.jpg);
+    
     background-size: cover;
     background-position: center;
     filter: grayscale(100%);
     padding: 50px 0;
-    margin-top: 20px;
+    margin-top: 0px;
 }
 
 .composition-dossier-content {
@@ -21,7 +21,7 @@
 }
 
 .composition-dossier-title {
-    font-size: 45px;
+    font-size: 25px;
     font-weight: bold;
     animation: fade-in 5s infinite;
     text-align: center;
@@ -32,7 +32,7 @@
 
 .composition-dossier-list {
     list-style-type: decimal;
-    margin-top: 30px;
+    margin-top: 10px;
     padding-left: 0;
     color: #000000
 }
@@ -41,7 +41,7 @@
     text-align: left;
     margin-bottom: 10px;
      text-align: justify;
-     font-size: 25px;
+     font-size: 16px;
 
 }
 
