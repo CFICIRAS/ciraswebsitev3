@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>CFI-CIRAS</title>
+<link rel="stylesheet" type="text/css" href="/css/news_styles.css">
+<link rel="stylesheet" type="text/css" href="/css/news_responsive.css">
+<style>
+    /* ... (autres styles précédents) ... */
+
+    .inscription_button {
+        display: inline-block;
+        background-color: #ffcc00;
+        color: white;
+        padding: 20px 45px;
+        border-radius: 2px;
+        text-decoration: none;
+        transition: background-color 0.3s;
+        margin-top: 20px;
+		font-family: Arial, sans-serif; /* Modifier la police */
+        font-size: 16px; /* Modifier la taille */
+        font-weight: bold; /* Mettre en gras */
+    }
+
+    .inscription_button:hover {
+        background-color: #00ccff;
+    }
+
+    /* Nouveau style pour la durée et le prix */
+    .formation_details {
+        text-align: center;
+        margin-top: 20px;
+    }
+
+    .formation_duration {
+        font-size: 18px;
+        font-weight: bold;
+    }
+
+    .formation_price {
+        font-size: 24px;
+        font-weight: bold;
+        border: 2px solid #ffcc00;
+        padding: 10px 20px;
+        border-radius: 2px;
+        display: inline-block;
+        margin-top: 10px;
+    }
+
+    /* Style pour le formulaire d'inscription */
+    .inscription_form {
+        text-align: center;
+        margin-top: 20px;
+        
+    }
+
+    .inscription_form input {
+        margin-bottom: 10px;
+        padding: 5px;
+        width: 100%;
+    }
+
+    .inscription_submit {
+        display: inline-block;
+        background-color: #ffcc00;
+        color: white;
+        padding: 20px 45px;
+        border: none;
+        border-radius: 2px;
+        cursor: pointer;
+        transition: background-color 0.3s;
+        font-family: Arial, sans-serif; /* Modifier la police */
+        font-size: 20px; /* Modifier la taille */
+        font-weight: bold; /* Mettre en gras */
+    }
+
+    .inscription_submit:hover {
+        background-color: #00ccff;
+    }
+    /* Style pour le modal d'inscription */
+    .modal {
+        display: none;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.5);
+        align-items: center;
+        justify-content: center;
+    }
+
+    .modal_content {
+        background-color: white;
+        padding: 20px;
+        border-radius: 5px;
+    }
+
+    /* ... (styles précédents) ... */
+</style>
+
+<!-- Inclure le script jQuery -->
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+<%-include ('./includes/header')%>
+</head>
+<body>
+    <!-- Home -->
+    <div class="home">
+        <div class="home_background_container prlx_parent">
+            <div class="home_background prlx" style="background-image:url(/img/cnnaA.png)"></div>
+        </div>
+        <div class="home_content">
+            <h1>CCNA</h1>
+        </div>
+    </div>
+
+    <div class="news">
+        <div class="container">
+            <div class="row">
+                <!-- News Column -->
+                <div class="col-lg-8">
+                    <div class="cours">
+                        <!-- News Post -->
+                        <div class="cours">
+                            <div class="cours_image">
+                                <img src="/img/ccna2.jpg" alt="https://unsplash.com/@dsmacinnes">
+                            </div>
+                            <div class="cours_top d-flex flex-column flex-sm-row">
+                                <div class="cours_title_container">
+                                    <div class="cours_title">
+                                        <a>CCNA Routing and Switching (1,2 et 3)</a>
+                                    </div>
+                                    <div class="cours_meta">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="cours_text">
+                                <p>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Ajout du bouton d'inscription -->
+                    <div class="text-center">
+                        <a href="#" class="inscription_submit">S'inscrire</a>
+                    </div>
+
+                    <!-- Nouveau bloc pour la durée et le prix -->
+                    <div class="formation_details">
+                        <div class="formation_duration">Durée de la formation : 6 mois</div>
+                        <div class="formation_price">Prix de la formation : 250.000 FCFA</div>
+                    </div>
+                </div>
+
+                <!-- Sidebar Column -->
+                <div class="col-lg-4">
+                    <div class="sidebar">
+                        <!-- Archives -->
+                        <div class="sidebar_section">
+                            <div class="sidebar_section_title">
+                                <h3>Apprentissage</h3>
+                            </div>
+                            <ul class="sidebar_list">
+                                <li class="sidebar_list_item"><a>Configurer les fonctionnalités de bases et avancées des routeurs et commutateurs.</a></li>
+                                <li class="sidebar_list_item"><a>Configurer les VLANs, le routage inter-VLAN, STP,EtherChannel,etc ...</a></li>
+                                <li class="sidebar_list_item"><a>Implementer différents protocoles.</a></li>
+                                <li class="sidebar_list_item"><a>Assurer le dépannage des composants de base et du Réseau.</a></li>
+                                <li class="sidebar_list_item"><a>Configurer le protocole OSPF.</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <%-include ('./includes/footer')%>
+
+   <!-- Modal d'inscription -->
+   <div class="modal fade" id="inscriptionModal" tabindex="-1" role="dialog" aria-labelledby="inscriptionModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="inscriptionModalLabel">Formulaire d'Inscription</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <form action="#" method="post">
+                    <div class="form-group">
+                        <label for="nom">Nom</label>
+                        <input type="text" class="form-control" id="nom" name="nom" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="prenom">Prénom</label>
+                        <input type="text" class="form-control" id="prenom" name="prenom" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Adresse e-mail</label>
+                        <input type="email" class="form-control" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label>Adresse</label>
+                        <div class="form-row">
+                            <div class="col">
+                                <input type="text" class="form-control" placeholder="Numéro" required>
+                            </div>
+                            <div class="col">
+                                <input type="text" class="form-control" placeholder="Ruelle" required>
+                            </div>
+                            <div class="col">
+                                <input type="text" class="form-control" placeholder="Arrondissement" required>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="telephone">Téléphone</label>
+                        <input type="tel" class="form-control" id="telephone" name="telephone" required>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Valider</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- ... (autres sections du code) ... -->
+
+   <!-- Inclure les fichiers JavaScript Bootstrap -->
+   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+   <script>
+       // Ouvrir le modal
+       $(".inscription_submit").click(function() {
+           $("#inscriptionModal").modal("show");
+       });
+
+       // Fermer le modal
+       $("#closeModal").click(function() {
+           $("#inscriptionModal").modal("hide");
+       });
+   </script>
+
+   <!-- Inclure le fichier CSS Bootstrap -->
+   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</body>
+</html>

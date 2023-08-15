@@ -88,6 +88,18 @@ userRoute.get('/formation/assistmanage', (req,res)=>{
 userRoute.get('/formation/maintenance', (req,res)=>{
     res.render('_maint' , {page_name: 'formation'})
 })
+userRoute.get('/Cisco/iet', (req,res)=>{
+    res.render('_iet' , {page_name: 'Cisco'})
+})
+userRoute.get('/Cisco/ccna', (req,res)=>{
+    res.render('_ccna' , {page_name: 'Cisco'})
+})
+userRoute.get('/Cisco/secu', (req,res)=>{
+    res.render('_secu' , {page_name: 'Cisco'})
+})
+userRoute.get('/Cisco/ccnp', (req,res)=>{
+    res.render('_ccnp' , {page_name: 'Cisco'})
+})
 
 // ROUTE ACTUALITES ET EVENEMENT 
 userRoute.get('/activites/news1', (req, res)=>{

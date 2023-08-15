@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
 <title>CFI-CIRAS</title>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
@@ -7,40 +7,24 @@
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 <%-include ('./includes/header')%>
 <style>
-    /* Add custom styles here */
-    body {
-        color: black;
-    }
-
-    .section_title {
-        font-family: Arial, sans-serif;
-        font-weight: bold;
-        font-size: 24px;
-    }
-
-    .block-container {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-between;
-    }
-
-    .block {
-        background-color: #f8f9fa;
+    /* ... (styles restants) ... */
+    
+    .formation-section {
+        background-color: #b5b8b9;
         border-radius: 10px;
         padding: 20px;
-        width: 100%;
         margin-bottom: 30px;
     }
 
-    .block-image {
+    .formation-image {
         background-size: cover;
         background-position: center;
-        border-radius: 10px;
+        border-radius: 5px;
         height: 300px;
         position: relative;
     }
 
-    .block-content {
+    .formation-content {
         position: absolute;
         top: 50%;
         left: 50%;
@@ -49,31 +33,34 @@
         color: white;
     }
 
-    .block-title {
+    .formation-title {
         font-size: 24px;
         font-weight: bold;
         margin-bottom: 10px;
     }
 
-    .block-text {
+    .formation-text {
         font-size: 16px;
         margin-bottom: 20px;
-        color: rgb(6, 6, 6);
+        color: rgb(163, 235, 108);
     }
 
-    .block-button {
+    .formation-button {
         display: inline-block;
-        background-color: #ffcc00;
+        background-color: #00c8ff;
         color: white;
-        padding: 10px 20px;
-        border-radius: 20px;
+        padding: 15px 40px;
+        border-radius: 5px;
         text-decoration: none;
+        font-size: 16px;
         transition: background-color 0.3s;
     }
 
-    .block-button:hover {
-        background-color: #e46b1b;
+    .formation-button:hover {
+        background-color: #fede0f;
     }
+    
+    /* ... (autres styles restants) ... */
 </style>
 </head>
 <body>
@@ -97,54 +84,45 @@
                 </div>
             </div>
             <div class="block-container">
-                <div class="block block1">
-                    <div class="block-image" style="background-image: url('img/logo-cisco.jpg');">
-                        <div class="block-content">
-                            <div class="block-title">Formation Avancée en Réseaux</div>
-                            <div class="block-text">Découvrez notre formation avancée en réseaux Cisco pour devenir un expert en connectivité.</div>
-                            <a href="#" class="block-button">S'inscrire</a>
+                <div class="formation-section">
+                    <div class="formation-image" style="background-image: url('img/fond.jpg');">
+                        <div class="formation-content">
+                            <div class="formation-title">IT Essetials (Hardware, Software and mobile)</div>
+                            <div class="formation-text"></div>
+                            <a href="/Cisco/iet" class="formation-button">Voir plus</a>
                         </div>
                     </div>
                 </div>
-                <div class="block block2">
-                    <div class="block-image" style="background-image: url('img/logo-cisco.jpg');">
-                        <div class="block-content">
-                            <div class="block-title">Sécurité Informatique</div>
-                            <div class="block-text">Protégez les réseaux et les systèmes informatiques avec notre formation en sécurité Cisco.</div>
-                            <a href="#" class="block-button">S'inscrire</a>
+                <div class="formation-section">
+                    <div class="formation-image" style="background-image: url('img/fond.jpg');">
+                        <div class="formation-content">
+                            <div class="formation-title">CCNA Routing and Switching (1,2 et 3)</div>
+                            <div class="formation-text"></div>
+                            <a href="/Cisco/ccna" class="formation-button">Voir plus</a>
                         </div>
                     </div>
                 </div>
-                <div class="block block3">
-                    <div class="block-image" style="background-image: url('img/logo-cisco.jpg');">
-                        <div class="block-content">
-                            <div class="block-title">Internet des Objets (IoT)</div>
-                            <div class="block-text">Explorez le monde de l'Internet des Objets avec notre formation spécialisée en IoT.</div>
-                            <a href="#" class="block-button">S'inscrire</a>
+                <div class="formation-section">
+                    <div class="formation-image" style="background-image: url('img/fond.jpg');">
+                        <div class="formation-content">
+                            <div class="formation-title">Sécurité Network</div>
+                            <div class="formation-text"></div>
+                            <a href="/Cisco/secu" class="formation-button">Voir plus</a>
                         </div>
                     </div>
                 </div>
-                <div class="block block4">
-                    <div class="block-image" style="background-image: url('img/logo-cisco.jpg');">
-                        <div class="block-content">
-                            <div class="block-title">Développement Web</div>
-                            <div class="block-text">Apprenez à concevoir et développer des applications Web avec notre formation en développement Cisco.</div>
-                            <a href="#" class="block-button">S'inscrire</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="block block5">
-                    <div class="block-image" style="background-image: url('img/logo-cisco.jpg');">
-                        <div class="block-content">
-                            <div class="block-title">Big Data et Analytique</div>
-                            <div class="block-text">Maîtrisez les technologies Big Data et les techniques analytiques avec notre formation Cisco.</div>
-                            <a href="#" class="block-button">S'inscrire</a>
+                <div class="formation-section">
+                    <div class="formation-image" style="background-image: url('img/fond.jpg');">
+                        <div class="formation-content">
+                            <div class="formation-title">CCNP Entrerpise</div>
+                            <div class="formation-text"></div>
+                            <a href="/Cisco/ccnp" class="formation-button">Voir plus</a>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-    <%-include ('./includes/footer')%> 
+<%-include ('./includes/footer')%>
 </body>
 </html>
