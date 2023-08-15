@@ -1,3 +1,6 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="description" content="Course Project">
@@ -11,107 +14,129 @@
 <link rel="stylesheet" type="text/css" href="/css/responsive.css">
 <link rel="stylesheet" type="text/css" href="/css/elements_styles.css">
 <link rel="stylesheet" type="text/css" href="/css/elements_responsive.css">
+<style>
+/* Add this to your existing CSS */
+.dropdown:hover .dropdown-menu {
+    display: block;
+}
+</style>
 </head>
 <body>
 
 <div class="super_container">
 
-	<!-- Header -->
+    <!-- Header -->
 
-	<header class="header d-flex flex-row">
-		<div class="header_content d-flex flex-row align-items-center">
-			<!-- Logo -->
-			<div class="logo_container">
-				<div class="logo">
-					<img src="/img/logo-cfi-icon.png" alt="" width="45" height="" >
-					<span>CFI-CIRAS</span>
-				</div>
-			</div>
+    <header class="header d-flex flex-row">
+        <div class="header_content d-flex flex-row align-items-center">
+            <!-- Logo -->
+            <div class="logo_container">
+                <div class="logo">
+                    <img src="/img/logo-cfi-icon.png" alt="" width="45" height="" >
+                    <span>CFI-CIRAS</span>
+                </div>
+            </div>
 
-			<!-- Main Navigation -->
-			<nav class="main_nav_container">
-				<div class="main_nav">
-					<ul class="main_nav_list">
-						<li class="main_nav_item"><a href="/">Acceuil</a></li>
-						<li class="main_nav_item dropdown">
-							<a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-expanded="false">Ecole</a>
-							<div class="dropdown-menu">
-							  <a class="dropdown-item" href="/decouverte">Présentation</a>
-							  <a class="dropdown-item" href="/directeur">Mot du Directeur Général</a>
-							  <a class="dropdown-item" href="/equipe">Corps Administratifs</a>
-							  <a class="dropdown-item" href="/personnel">Corps Enseignant</a>
-							  <a class="dropdown-item" href="/Cisco">Académi Cisco</a>
-							  <a class="dropdown-item" href="/Calendrier">Calendrier académique</a>
-							  <a class="dropdown-item" href="/activites">Actualités</a>
-							</div>
-						  </li>
-						<li class="main_nav_item"><a href="/formation">Formation</a></li>
-						<li class="main_nav_item"><a href="/inscription">Inscription</a></li>
-						<li class="main_nav_item dropdown">
-							<a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-expanded="false">Partenaires</a>
-							<div class="dropdown-menu">
-							  <a class="dropdown-item" href="#">African University of Management</a>
-							  <a class="dropdown-item" href="#">Academie Cisco</a>
-							  <a class="dropdown-item" href="#">Université de Reims</a>
-							  <a class="dropdown-item" href="#">Université de Versailles</a>
-							  <a class="dropdown-item" href="#">HP Ivent</a>
-							  <a class="dropdown-item" href="#">Institu Afraince d'Informatique</a>
-							</div>
-						  </li>
-						<li class="main_nav_item"><a href="/contact">contact</a></li>
-					</ul>
-				</div>
-			</nav>
-		</div>
-		<!-- Hamburger -->
-		<div class="hamburger_container">
-			<i class="fas fa-bars trans_200"></i>
-		</div>
+            <!-- Main Navigation -->
+            <nav class="main_nav_container">
+                <div class="main_nav">
+                    <ul class="main_nav_list">
+                        <li class="main_nav_item"><a href="/">Acceuil</a></li>
+                        <li class="main_nav_item dropdown">
+                            <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-expanded="false">Ecole</a>
+                            <div class="dropdown-menu">
+                                <a class="dropdown-item" href="/decouverte">Présentation</a>
+                                <a class="dropdown-item" href="/directeur">Mot du Directeur Général</a>
+                                <a class="dropdown-item" href="/equipe">Corps Administratifs</a>
+                                <a class="dropdown-item" href="/personnel">Corps Enseignant</a>
+                                <a class="dropdown-item" href="/Cisco">Académi Cisco</a>
+                                <a class="dropdown-item" href="/Calendrier">Calendrier académique</a>
+                                <a class="dropdown-item" href="/activites">Actualités</a>
+                            </div>
+                        </li>
+                        <li class="main_nav_item"><a href="/formation">Formation</a></li>
+                        <li class="main_nav_item"><a href="/inscription">Inscription</a></li>
+                        <li class="main_nav_item dropdown">
+                            <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-expanded="false">Partenaires</a>
+                            <div class="dropdown-menu">
+                                <a class="dropdown-item" href="#">African University of Management</a>
+                                <a class="dropdown-item" href="#">Academie Cisco</a>
+                                <a class="dropdown-item" href="#">Université de Reims</a>
+                                <a class="dropdown-item" href="#">Université de Versailles</a>
+                                <a class="dropdown-item" href="#">HP Ivent</a>
+                                <a class="dropdown-item" href="#">Institu Afraince d'Informatique</a>
+                            </div>
+                        </li>
+                        <li class="main_nav_item"><a href="/contact">contact</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+        <!-- Hamburger -->
+        <div class="hamburger_container">
+            <i class="fas fa-bars trans_200"></i>
+        </div>
 
-	</header>
-	
-	<!-- Menu -->
-	<div class="menu_container menu_mm">
+    </header>
+    
+    <!-- Menu -->
+    <div class="menu_container menu_mm">
 
-		<!-- Menu Close Button -->
-		<div class="menu_close_container">
-			<div class="menu_close"></div>
-		</div>
+        <!-- Menu Close Button -->
+        <div class="menu_close_container">
+            <div class="menu_close"></div>
+        </div>
 
-		<!-- Menu Items -->
-		<div class="menu_inner menu_mm">
-			<div class="menu menu_mm">
-				<ul class="menu_list menu_mm">
-					<li class="main_nav_item"><a href="/">Acceuil</a></li>
-					<li class="main_nav_item dropdown">
-						<a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-expanded="false">Ecole</a>
-						<div class="dropdown-menu">
-						  <a class="dropdown-item" href="/decouverte">Présentation</a>
-						  <a class="dropdown-item" href="/directeur">Mot du Directeur Général</a>
-						  <a class="dropdown-item" href="/equipe">Corps Administratifs</a>
-						  <a class="dropdown-item" href="/activites">Corps Enseignant</a>
-						</div>
-					  </li>
-					<li class="main_nav_item"><a href="/formation">Formation</a></li>
-					<li class="main_nav_item"><a href="/inscription">Inscription</a></li>
-					<li class="main_nav_item dropdown">
-						<a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-expanded="false">Partenaires</a>
-						<div class="dropdown-menu">
-						  <a class="dropdown-item" href="#">African University of Management</a>
-						  <a class="dropdown-item" href="#">Academie Cisco</a>
-						  <a class="dropdown-item" href="#">Université de Reims</a>
-						  <a class="dropdown-item" href="#">Université de Versailles</a>
-						  <a class="dropdown-item" href="#">HP Ivent</a>
-						  <a class="dropdown-item" href="#">Institu Afraince d'Informatique</a>
-						</div>
-					  </li>
-					<li class="main_nav_item"><a href="/contact">contact</a></li>
-				</ul>
+        <!-- Menu Items -->
+        <div class="menu_inner menu_mm">
+            <div class="menu menu_mm">
+                <ul class="menu_list menu_mm">
+                    <li class="main_nav_item"><a href="/">Acceuil</a></li>
+                    <li class="main_nav_item dropdown">
+                        <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-expanded="false">Ecole</a>
+                        <div class="dropdown-menu">
+                            <a class="dropdown-item" href="/decouverte">Présentation</a>
+                            <a class="dropdown-item" href="/directeur">Mot du Directeur Général</a>
+                            <a class="dropdown-item" href="/equipe">Corps Administratifs</a>
+                            <a class="dropdown-item" href="/activites">Corps Enseignant</a>
+                        </div>
+                    </li>
+                    <li class="main_nav_item"><a href="/formation">Formation</a></li>
+                    <li class="main_nav_item"><a href="/inscription">Inscription</a></li>
+                    <li class="main_nav_item dropdown">
+                        <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-expanded="false">Partenaires</a>
+                        <div class="dropdown-menu">
+                            <a class="dropdown-item" href="#">African University of Management</a>
+                            <a class="dropdown-item" href="#">Academie Cisco</a>
+                            <a class="dropdown-item" href="#">Université de Reims</a>
+                            <a class="dropdown-item" href="#">Université de Versailles</a>
+                            <a class="dropdown-item" href="#">HP Ivent</a>
+                            <a class="dropdown-item" href="#">Institu Afraince d'Informatique</a>
+                        </div>
+                    </li>
+                    <li class="main_nav_item"><a href="/contact">contact</a></li>
+                </ul>
 
-				<!-- Menu Social -->
-			</div>
+                <!-- Menu Social -->
+            </div>
 
-		</div>
+        </div>
 
-	</div>
+    </div>
 </div>
+
+<!-- Add the modified JavaScript -->
+<script>
+$(document).ready(function () {
+    $('.dropdown').hover(function () {
+        $(this).addClass('show');
+        $(this).find('.dropdown-menu').addClass('show');
+    }, function () {
+        $(this).removeClass('show');
+        $(this).find('.dropdown-menu').removeClass('show');
+    });
+});
+</script>
+
+</body>
+</html>
