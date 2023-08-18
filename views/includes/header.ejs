@@ -15,7 +15,6 @@
 <link rel="stylesheet" type="text/css" href="/css/elements_styles.css">
 <link rel="stylesheet" type="text/css" href="/css/elements_responsive.css">
 <style>
-/* Add this to your existing CSS */
 .dropdown:hover .dropdown-menu {
     display: block;
 }
@@ -92,28 +91,31 @@
             <div class="menu menu_mm">
                 <ul class="menu_list menu_mm">
                     <li class="main_nav_item"><a href="/">Acceuil</a></li>
-                    <li class="main_nav_item dropdown">
-                        <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-expanded="false">Ecole</a>
-                        <div class="dropdown-menu">
-                            <a class="dropdown-item" href="/decouverte">Présentation</a>
-                            <a class="dropdown-item" href="/directeur">Mot du Directeur Général</a>
-                            <a class="dropdown-item" href="/equipe">Corps Administratifs</a>
-                            <a class="dropdown-item" href="/activites">Corps Enseignant</a>
-                        </div>
-                    </li>
+					<li class="main_nav_item dropdown">
+						<a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-expanded="false">Ecole</a>
+						<div class="dropdown-menu">
+							<a class="dropdown-item" href="/decouverte">Présentation</a>
+							<a class="dropdown-item" href="/directeur">Mot du Directeur Général</a>
+							<a class="dropdown-item" href="/equipe">Corps Administratifs</a>
+							<a class="dropdown-item" href="/personnel">Corps Enseignant</a>
+							<a class="dropdown-item" href="/Cisco">Académi Cisco</a>
+							<a class="dropdown-item" href="/Calendrier">Calendrier académique</a>
+							<a class="dropdown-item" href="/activites">Actualités</a>
+						</div>
+					</li>
                     <li class="main_nav_item"><a href="/formation">Formation</a></li>
                     <li class="main_nav_item"><a href="/inscription">Inscription</a></li>
-                    <li class="main_nav_item dropdown">
-                        <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-expanded="false">Partenaires</a>
-                        <div class="dropdown-menu">
-                            <a class="dropdown-item" href="#">African University of Management</a>
-                            <a class="dropdown-item" href="#">Academie Cisco</a>
-                            <a class="dropdown-item" href="#">Université de Reims</a>
-                            <a class="dropdown-item" href="#">Université de Versailles</a>
-                            <a class="dropdown-item" href="#">HP Ivent</a>
-                            <a class="dropdown-item" href="#">Institu Afraince d'Informatique</a>
-                        </div>
-                    </li>
+					<li class="main_nav_item dropdown">
+						<a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-expanded="false">Partenaires</a>
+						<div class="dropdown-menu">
+							<a class="dropdown-item" href="#">African University of Management</a>
+							<a class="dropdown-item" href="#">Academie Cisco</a>
+							<a class="dropdown-item" href="#">Université de Reims</a>
+							<a class="dropdown-item" href="#">Université de Versailles</a>
+							<a class="dropdown-item" href="#">HP Ivent</a>
+							<a class="dropdown-item" href="#">Institu Afraince d'Informatique</a>
+						</div>
+					</li>
                     <li class="main_nav_item"><a href="/contact">contact</a></li>
                 </ul>
 
@@ -125,7 +127,6 @@
     </div>
 </div>
 
-<!-- Add the modified JavaScript -->
 <script>
 $(document).ready(function () {
     $('.dropdown').hover(function () {
