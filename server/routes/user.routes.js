@@ -10,6 +10,10 @@ userRoute.get('/', (req, res) =>{
     res.render('index' , 
                 {page_name: 'acceuil'}); 
 })
+userRoute.get('/home', (req, res) =>{
+    res.render('index1' , 
+                {page_name: 'acceuil'}); 
+})
 userRoute.get('/inscription', (req,res)=>{
     res.render('inscription', 
                 {page_name: 'inscription'})
