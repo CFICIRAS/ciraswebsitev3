@@ -4,9 +4,72 @@
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
     <link rel="stylesheet" href="animated.css">
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-<%-include('./includes/header')%>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	
+	<meta name="description" content="Course Project">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="/css/bootstrap4/bootstrap.min.css">
+	<link href="/plugins/fontawesome-free-5.0.1/css/fontawesome-all.css" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" type="text/css" href="/plugins/OwlCarousel2-2.2.1/owl.carousel.css">
+	<link rel="stylesheet" type="text/css" href="/plugins/OwlCarousel2-2.2.1/owl.theme.default.css">
+	<link rel="stylesheet" type="text/css" href="/plugins/OwlCarousel2-2.2.1/animate.css">
+	<link rel="stylesheet" type="text/css" href="/css/main_styles.css">
+	<link rel="stylesheet" type="text/css" href="/css/responsive.css">
+	<link rel="stylesheet" type="text/css" href="/css/elements_styles.css">
+	<link rel="stylesheet" type="text/css" href="/css/elements_responsive.css">
+	<link rel="icon" href="/img/logo-cfi-icon.png" type="image/x-icon">
+	<style>
+	.dropdown:hover .dropdown-menu {
+		display: block;
+	}
+	</style>
+	</head>
+	<body>
+	
+	<div class="super_container">
+	
+		<!-- Header -->
+	
+		<header class="header d-flex flex-row">
+			<div class="header_content d-flex flex-row align-items-center">
+				<!-- Logo -->
+				<div class="logo_container">
+					<div class="logo">
+						<img src="/img/logo-cfi-icon.png" alt="" width="45" height="" >
+						<span>CFI-CIRAS</span>
+					</div>
+				</div>
+			</div>
+			<!-- Hamburger -->
+			<div class="hamburger_container">
+				<i class="fas fa-bars trans_200"></i>
+			</div>
+	
+		</header>
+		
+		<!-- Menu -->
+		<div class="menu_container menu_mm">
+	
+			<!-- Menu Close Button -->
+			<div class="menu_close_container">
+				<div class="menu_close"></div>
+			</div>
+		</div>
+	</div>
+	
+	<script>
+	$(document).ready(function () {
+		$('.dropdown').hover(function () {
+			$(this).addClass('show');
+			$(this).find('.dropdown-menu').addClass('show');
+		}, function () {
+			$(this).removeClass('show');
+			$(this).find('.dropdown-menu').removeClass('show');
+		});
+	});
+	</script>
 	<!-- Home -->
-
 	<div class="">
 
 		<!-- Hero Slider -->
@@ -15,31 +78,37 @@
 				
 				<!-- Hero Slide -->
 				<div class="hero_slide ">
+<<<<<<< HEAD
 					<div class="hero_slide_background" style="background-image:url(img/Michaelagence15.png)"></div>
+=======
+					<div class="hero_slide_background" style="background-image:url(img/banner-2.pNg)"></div>
+>>>>>>> 52faed73706be705ec96c99c097921a8c68acfcf
 					<div class="hero_slide_container d-flex flex-column align-items-center justify-content-center">
-						<div class="hero_slide_content text-center">
-							<h1 data-animation-in="fadeInUp" data-animation-out="animate-out fadeOut">Le Centre de Formation en Informatique</h1>
-						</div>
+						
 					</div>
 				</div>
 				
 				<!-- Hero Slide -->
 				<div class="hero_slide">
+<<<<<<< HEAD
 					<div class="hero_slide_background" style="background-image:url(img/michaelagence4.png)"></div>
+=======
+					<div class="hero_slide_background" style="background-image:url(img/R.png)"></div>
+>>>>>>> 52faed73706be705ec96c99c097921a8c68acfcf
 					<div class="hero_slide_container d-flex flex-column align-items-center justify-content-center">
-						<div class="hero_slide_content text-center">
-							<h1 data-animation-in="fadeInUp" data-animation-out="animate-out fadeOut">Le Centre de Formation en Informatique</h1>
-						</div>
+						
 					</div>
 				</div>
 				
 				<!-- Hero Slide -->
 				<div class="hero_slide">
+<<<<<<< HEAD
 					<div class="hero_slide_background" style="background-image:url(img/Michaelagence11.png)"></div>
+=======
+					<div class="hero_slide_background" style="background-image:url(img/R.png)"></div>
+>>>>>>> 52faed73706be705ec96c99c097921a8c68acfcf
 					<div class="hero_slide_container d-flex flex-column align-items-center justify-content-center">
-						<div class="hero_slide_content text-center">
-							<h1 data-animation-in="fadeInUp" data-animation-out="animate-out fadeOut">Le Centre de Formation en Informatique</h1>
-						</div>
+						
 					</div>
 				</div>
 
@@ -48,53 +117,48 @@
 
 	</div>
 
-	<div class="hero_boxes mb-4">
-		<div class="hero_boxes_inner">
-			<div class="container">
+
+	<!-- Footer -->
+
+	<footer class="footer">
+		<div class="container">
+			<div class="footer_content">
 				<div class="row">
 
-					<div class="col-lg-4 hero_box_col">
-						<div class="hero_box d-flex flex-row align-items-center justify-content-start">
-							<img src="/img/earth-globe.svg" class="svg" alt="">
-							<div class="hero_box_content">
-								<h2 class="hero_box_title">Cours en ligne</h2>
+					<!-- Footer Column - About -->
+					<div class="col-lg-3 footer_col">
+
+						<!-- Logo -->
+						<div class="logo_container">
+							<div class="logo">
+								<img src="/img/logo-cfi-icon.png" alt="" width="45">
+								<span>CFI-CIRAS</span>
 							</div>
 						</div>
+						<p class="footer_about_text">Le Centre de Formation en Informatique (CFI-CIRAS), est un établissement d'enseignement supérieur public crée par décret N° 99-266 du 31 décembre 1999.</p>
 					</div>
-
-					<div class="col-lg-4 hero_box_col">
-						<div class="hero_box d-flex flex-row align-items-center justify-content-start">
-							<img src="/img/books.svg" class="svg" alt="">
-							<div class="hero_box_content">
-								<h2 class="hero_box_title">Bibliothèque</h2>							
-							</div>
-						</div>
-					</div>
-
-					<div class="col-lg-4 hero_box_col">
-						<div class="hero_box d-flex flex-row align-items-center justify-content-start">
-							<img src="/img/professor.svg" class="svg" alt="">
-							<div class="hero_box_content">
-								<h2 class="hero_box_title">Espace étudiant</h2>
-							</div>
-						</div>
-					</div>
-
 				</div>
 			</div>
+
+			<!-- Footer Copyright -->
+
+			<div class="footer_bar d-flex flex-column flex-sm-row align-items-center">
+				<div class="footer_copyright">
+					<span><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+Copyright &copy;<script>document.write(new Date().getFullYear());</script> CFI-CIRAS. Tous droits reservé <i class="" aria-hidden="true"></i><a></a>
+<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></span>
+				</div>
+				<div class="footer_social ml-sm-auto">
+					<ul class="menu_social">
+						
+					</ul>
+				</div>
+			</div>
+
 		</div>
-	</div>
-	<!-- Popular -->
-	<div class="popular page_section">
-		<div class="container">
-			<div class="row">
-				<div class="col">
-					<div class="section_title text-center">
-						<h1>Formation</h1>
-					</div>
-				</div>
-			</div>
+	</footer>
 
+<<<<<<< HEAD
 			<div class="row course_boxes">
 				
 				<!-- Popular Course Item -->
@@ -326,234 +390,23 @@
 			</div>
 		</div>
 	</div>
+=======
+>>>>>>> 52faed73706be705ec96c99c097921a8c68acfcf
 </div>
 
-	<!-- Testimonials -->
-	<div class="testimonials page_section ">
-		<!-- <div class="testimonials_background" style="background-image:url(img/testimonials_background.jpg)"></div> -->
-		<div class="testimonials_background_container prlx_parent">
-			<div class="milestones_background2 testimonials_background" style="background-image:url(img/temoin.png)"></div>
-		</div>
-		<div class="container animated animate__fadeInUp">
+<script src="/js/jquery-3.2.1.min.js"></script>
+<script src="/sjs/bootstrap4/popper.js"></script>
+<script src="/sjs/bootstrap4/bootstrap.min.js"></script>
+<script src="/plugins/greensock/TweenMax.min.js"></script>
+<script src="/plugins/greensock/TimelineMax.min.js"></script>
+<script src="/plugins/scrollmagic/ScrollMagic.min.js"></script>
+<script src="/plugins/greensock/animation.gsap.min.js"></script>
+<script src="/plugins/greensock/ScrollToPlugin.min.js"></script>
+<script src="/plugins/OwlCarousel2-2.2.1/owl.carousel.js"></script>
+<script src="/plugins/scrollTo/jquery.scrollTo.min.js"></script>
+<script src="/plugins/easing/easing.js"></script>
+<script src="/js/custom.js"></script>
+<script src="/js/elements_custom.js"></script>
 
-			<div class="row">
-				<div class="col">
-					<div class="section_title text-center">
-						<h1>Témoinage</h1>
-					</div>
-				</div>
-			</div>
-
-			<div class="row">
-				<div class="col-lg-10 offset-lg-1">
-					
-					<div class="testimonials_slider_container">
-
-						<!-- Testimonials Slider -->
-						<div class="owl-carousel owl-theme testimonials_slider">
-							
-							<!-- Testimonials Item -->
-							<div class="owl-item">
-								<div class="testimonials_item text-center">
-									<div class="quote">“</div>
-									<p class="testimonials_text">In aliquam, augue a gravida rutrum, ante nisl fermentum nulla, vitae tempor nisl ligula vel nunc. Proin quis mi malesuada, finibus tortor fermentum.In aliquam, augue a gravida rutrum, ante nisl fermentum nulla, vitae tempor nisl ligula vel nunc. Proin quis mi malesuada, finibus tortor fermentum.</p>
-									<div class="testimonial_user">
-										<div class="testimonial_image mx-auto">
-											<img src="/img/testimonials_user.jpg" alt="">
-										</div>
-										<div class="testimonial_name">james </div>
-										<div class="testimonial_title">Promotion 2022-2023</div>
-									</div>
-								</div>
-							</div>
-
-							<!-- Testimonials Item -->
-							<div class="owl-item">
-								<div class="testimonials_item text-center">
-									<div class="quote">“</div>
-									<p class="testimonials_text">In aliquam, augue a gravida rutrum, ante nisl fermentum nulla, vitae tempor nisl ligula vel nunc. Proin quis mi malesuada, finibus tortor fermentum.In aliquam, augue a gravida rutrum, ante nisl fermentum nulla, vitae tempor nisl ligula vel nunc. Proin quis mi malesuada, finibus tortor fermentum.</p>
-									<div class="testimonial_user">
-										<div class="testimonial_image mx-auto">
-											<img src="/img/testimonials_user.jpg" alt="">
-										</div>
-										<div class="testimonial_name">james cooper</div>
-										<div class="testimonial_title">Promotion 2020-2021</div>
-									</div>
-								</div>
-							</div>
-
-							<!-- Testimonials Item -->
-							<div class="owl-item">
-								<div class="testimonials_item text-center">
-									<div class="quote">“</div>
-									<p class="testimonials_text">In aliquam, augue a gravida rutrum, ante nisl fermentum nulla, vitae tempor nisl ligula vel nunc. Proin quis mi malesuada, finibus tortor fermentum.In aliquam, augue a gravida rutrum, ante nisl fermentum nulla, vitae tempor nisl ligula vel nunc. Proin quis mi malesuada, finibus tortor fermentum.</p>
-									<div class="testimonial_user">
-										<div class="testimonial_image mx-auto">
-											<img src="/img/testimonials_user.jpg" alt="">
-										</div>
-										<div class="testimonial_name">james cooper</div>
-										<div class="testimonial_title">Promotion 2021-2022</div>
-									</div>
-								</div>
-							</div>
-
-						</div>
-
-					</div>
-				</div>
-			</div>
-
-		</div>
-	</div>
-
-	<!-- Events -->
-
-	<div class="events page_section animated animate__fadeInUp">
-		<div class="container">
-			
-			<div class="row">
-				<div class="col">
-					<div class="section_title text-center">
-						<h1>Actualités</h1>
-					</div>
-				</div>
-			</div>
-			
-			<div class="event_items">
-
-				<!-- Event Item -->
-				<div class="row event_item">
-					<div class="col">
-						<div class="row d-flex flex-row align-items-end">
-
-							<div class="col-lg-2 order-lg-1 order-2">
-								<div class="event_date d-flex flex-column align-items-center justify-content-center">
-									<div class="event_day">07</div>
-									<div class="event_month">Janvier</div>
-								</div>
-							</div>
-
-							<div class="col-lg-6 order-lg-2 order-3">
-								<div class="event_content">
-									<div class="event_name"><a class="trans_200" href="#">Debut du Concours d'entrés</a></div>
-									<div class="event_location">CFI-CIRAS</div>
-									<p>In aliquam, augue a gravida rutrum, ante nisl fermentum nulla, vitae tempor nisl ligula vel nunc. Proin quis mi malesuada, finibus tortor.</p>
-								</div>
-							</div>
-
-							<div class="col-lg-4 order-lg-3 order-1">
-								<div class="event_image">
-									<img src="/img/concoursr.webp" alt="https://unsplash.com/@theunsteady5">
-								</div>
-							</div>
-
-						</div>	
-					</div>
-				</div>
-
-				
-				<!-- Event Item -->
-				<div class="row event_item">
-					<div class="col">
-						<div class="row d-flex flex-row align-items-end">
-
-							<div class="col-lg-2 order-lg-1 order-2">
-								<div class="event_date d-flex flex-column align-items-center justify-content-center">
-									<div class="event_day">07</div>
-									<div class="event_month">Janvier</div>
-								</div>
-							</div>
-
-							<div class="col-lg-6 order-lg-2 order-3">
-								<div class="event_content">
-									<div class="event_name"><a class="trans_200" href="#">Déroulement des soutenance de la promotion 2022-2023</a></div>
-									<div class="event_location">CFI-CIRAS</div>
-									<p>In aliquam, augue a gravida rutrum, ante nisl fermentum nulla, vitae tempor nisl ligula vel nunc. Proin quis mi malesuada, finibus tortor.</p>
-								</div>
-							</div>
-
-							<div class="col-lg-4 order-lg-3 order-1">
-								<div class="event_image">
-									<img src="/img/sout.webp" alt="https://unsplash.com/@juanmramosjr">
-								</div>
-							</div>
-
-						</div>	
-					</div>
-				</div>
-
-			</div>
-				
-		</div>
-	</div>
-	<!-- Partenaires -->
-
-	<div class="partenaires-section animated animate__fadeInUp">
-		<h2 class="partenaires-titre">Nos Partenaires</h2>
-		<div class="partenaires-container">
-			<div class="partenaire">
-				<img src="/img/logo_HP.PNG" alt="Partenaire 1">
-				<p class="partenaire-nom"></p>
-			</div>
-			<div class="partenaire">
-				<img src="/img/logo-IAI-Cameroun-good.png" alt="Partenaire 2">
-				<p class="partenaire-nom"></p>
-			</div>
-			<div class="partenaire">
-				<img src="/img/Cisco-Logo.jpg" alt="Partenaire 3">
-				<p class="partenaire-nom"></p>
-			</div>
-			<div class="partenaire">
-				<img src="/img/AUM.jpeg" alt="Partenaire 4">
-				<p class="partenaire-nom"></p>
-			</div>
-			<div class="partenaire">
-				<img src="/img/URCA.png" alt="Partenaire 5">
-				<p class="partenaire-nom"></p>
-			</div>
-			<div class="partenaire">
-				<img src="/img/versaiil.png" alt="Partenaire 6">
-				<p class="partenaire-nom"></p>
-			</div>
-			<div class="partenaire">
-				<img src="/img/momo_logo.jpeg" alt="Partenaire 7">
-				<p class="partenaire-nom"></p>
-			</div>
-		</div>
-	</div>
-<%-include('includes/footer')%>
-<script>
-	// Vérifier si l'élément est visible dans la vue du navigateur
-	$.fn.visible = function (partial) {
-		var $t = $(this),
-			$w = $(window),
-			viewTop = $w.scrollTop(),
-			viewBottom = viewTop + $w.height(),
-			_top = $t.offset().top,
-			_bottom = _top + $t.height(),
-			compareTop = partial === true ? _bottom : _top,
-			compareBottom = partial === true ? _top : _bottom;
-		return compareBottom <= viewBottom && compareTop >= viewTop;
-	};
-
-	// Fonction pour ajouter la classe 'animate__fadeInUp' aux éléments animés lorsqu'ils apparaissent dans la vue
-	function addAnimationClass() {
-		$(".animated").each(function (index) {
-			const $this = $(this);
-			if ($this.visible(true)) {
-				$this.addClass("animate__fadeInUp");
-			}
-		});
-	}
-
-	// Appel initial de la fonction pour les éléments déjà visibles lors du chargement de la page
-	addAnimationClass();
-
-	// Appeler la fonction lorsque l'utilisateur fait défiler la page
-	$(window).scroll(function () {
-		addAnimationClass();
-	});
-</script>
 </body>
-
 </html>
