@@ -3,16 +3,20 @@ const connection = require('../config/dbconfig')
 const fs = require("fs");
 
 exports.smdepot = (req, res)=>{
-  connection.getConnection((err, connexion) => {
-    const { ins_nom,ins_prenom,ins_tel,ins_profile,ins_bac, ins_filiere, ins_cycle  } = req.body;
+
+    const { nom
+            ,ins_prenom,
+            ins_tel,
+            ins_profile,
+            ins_bac, ins_filiere, ins_cycle  } = req.body;
     const newCandidat = {
-      ins_nom,
-      ins_prenom,
-      ins_tel,
-      ins_bac,
-      ins_profile, 
-      ins_filiere,
-      ins_cycle
+    nom,
+    ins_prenom,
+    ins_tel,
+    ins_bac,
+    ins_profile, 
+    ins_filiere,
+    ins_cycle
     };
     let dos_actenais, 
         dos_diplome , 
@@ -22,17 +26,19 @@ exports.smdepot = (req, res)=>{
     let uploadPath , chemin ; // variables traitements de fichiers
     let isFileUpload = false ; 
 
-    if(ins_nom ==""     || 
-       ins_prenom == "" ||
-       ins_tel == ""    ||
-       ins_bac == ""    ||
-       ins_filiere== "" ||
-       ins_cycle ==""
-      )
-    {
-      req.flash("message", "Veuillez remplir tout les champs, car ils sont essentiels") 
-      return res.redirect('/inscription#ins')
-    }
+        if(nom ==""     || 
+        ins_prenom == "" ||
+        ins_tel == ""    ||
+        ins_bac == ""    ||
+        ins_filiere== "" ||
+        ins_cycle ==""
+        )
+        {
+        req.flash("message", "Veuillez remplir tout les champs, car ils sont essentiels") 
+        return res.redirect('/inscription#ins')
+        }
+  connection.getConnection((err, connexion) => 
+  {
     if (newCandidat !== null)
     {
           // CHARGEMENT  DE FICHIERS
@@ -56,28 +62,28 @@ exports.smdepot = (req, res)=>{
           {
             isFileUpload = false ;
             req.flash("message", "votre diplôme doit être envoyer pour valider votre dossier") 
-            return res.redirect('/inscription#ins') 
+            return res.redirect('/inscription') 
           }
           if(dos_arrete == null)
           {
             isFileUpload = false ;
             req.flash("message", "Un arrete de dernier promotion doit être validé") 
-            return res.redirect('/inscription#ins') 
+            return res.redirect('/inscription') 
           }
           if(dos_photo == null)
           {
             isFileUpload = false ;
             req.flash("message", "Les photos d'identité sont obligatoires :!") 
-            return res.redirect('/inscription#ins') 
+            return res.redirect('/inscription') 
           }
           if( dos_autorisation == null)
           {
             isFileUpload = false ;
             req.flash("message", "Une autorisation de concourir doit être envoyer pour valider votre dossier") 
-            return res.redirect('/inscription#ins') 
+            return res.redirect('/inscription') 
           }
           console.log(req.files); // en dev
-          uploadPath = './server/uploads/' +"./"+ins_nom+ins_prenom+'/'; // repertoire de chargements des elements 
+          uploadPath = './server/uploads/' +"./"+nom+ins_prenom+'/'; // repertoire de chargements des elements 
           // creation dossier comportant le nom+prenom du dépositaire
           fs.promises.mkdir(uploadPath, { recursive: true })
 
@@ -130,14 +136,14 @@ exports.smdepot = (req, res)=>{
           if(isFileUpload)
           {
             connection.query(`INSERT INTO cficiras_website.cfi_candidat set 
-             ins_nom = ? , 
+             nom = ? , 
              ins_prenom =? , 
              ins_tel = ? , 
              ins_bac= ? , 
              ins_profile = ? , 
              ins_filiere= ? , 
              ins_cycle = ? `, 
-             [ins_nom,ins_prenom,ins_tel,ins_bac, ins_profile,ins_filiere,ins_cycle]) ;
+             [nom,ins_prenom,ins_tel,ins_bac, ins_profile,ins_filiere,ins_cycle]) ;
              
             connexion.release() ;
             req.flash("success" , "Dossier validé avec succès, Rapprochez-vous de la scolarité du CFI-CIRAS pour la suite")
