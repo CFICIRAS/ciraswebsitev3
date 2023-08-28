@@ -136,48 +136,48 @@
                 <form id="inscriptionForm">
                     <div class="form-group">
                         <label for="nom">Nom :</label>
-                        <input type="text" id="nom" name="nom" class="form-control" required>
+                        <input type="text" id="nom" name="ins_nom" 
+                        class="form-control" required>
                         <small id="fileHelp" class="form-text text-muted">Entrez votre nom(s)</small>
                     </div>
 
                     <div class="form-group">
                         <label for="prenom">Prénom :</label>
-                        <input type="text" id="prenom" name="prenom" class="form-control" required>
+                        <input type="text" id="prenom" name="ins_prenom" class="form-control" required>
                         <small id="fileHelp" class="form-text text-muted">Entrez votre prénom(s)</small>
                     </div>
 
                     <div class="form-group">
                         <label for="telephone">Téléphone :</label>
-                        <input type="tel" id="telephone" name="telephone" class="form-control" required>
+                        <input type="tel" id="telephone" name="ins_tel" class="form-control" required>
                         <small id="fileHelp" class="form-text text-muted">Entrez votre numéro de téléphone</small>
                     </div>
 
                     <div class="form-group">
                         <label for="profil">Profil :</label>
-                        <select id="profil" name="profil" class="form-control" required>
-                            <option value="Option 1">Bachelier</option>
-                            <option value="Option 2">Fonctionnaire</option>
+                        <select id="profil" name="ins_profile" class="form-control" required>
+                            <option value="bachelier">Bachelier</option>
+                            <option value="fonctionnaire">Fonctionnaire</option>
                         </select>
                         <small id="fileHelp" class="form-text text-muted">Vous êtes un Bachelier ou un Fonctionnaire</small>
                     </div>
 
                     <div class="form-group">
                         <label for="bac">Bac :</label>
-                        <select id="bac" name="bac" class="form-control" required>
-                            <option value="">Choisir le Bac</option>
-                            <option value="Bac Option A">SERIE A</option>
-                            <option value="Bac Option B">SERIE D</option>
-                            <option value="Bac Option C">SERIE C</option>
-                            <option value="Bac Option C">SERIE E</option>
-                            <option value="Bac Option C">SERIE F</option>
-                            <option value="Bac Option C">SERIE BG</option>
+                        <select id="bac" name="ins_bac" class="form-control" required>
+                            <option value="serie a">SERIE A</option>
+                            <option value="serie d">SERIE D</option>
+                            <option value="serie c">SERIE C</option>
+                            <option value="serie e">SERIE E</option>
+                            <option value="serie f">SERIE F</option>
+                            <option value="serie bg">SERIE BG</option>
                         </select>
                         <small id="fileHelp" class="form-text text-muted">Vous avez quel BAC ?</small>
                     </div>
 
                     <div class="form-group">
                         <label for="filieres">Filières :</label>
-                        <select id="filieres" name="filieres" class="form-control" required>
+                        <select id="filieres" name="ins_filiere" class="form-control" required>
                             <option value="">Choisir la filière</option>
                             <option value="Filière 1">INFORMATIQUE</option>
                             <option value="Filière 2">ADMINISTRATION PUBLIQUE</option>
@@ -188,7 +188,7 @@
 
                     <div class="form-group">
                         <label for="cycles">Cycles :</label>
-                        <select id="cycles" name="cycles" class="form-control" required>
+                        <select id="cycles" name="ins_cycle" class="form-control" required>
                             <option value="">Choisir une option</option>
                             <option value="Cycle 1">DUT</option>
                             <option value="Cycle 2">LICENCE</option>
@@ -198,38 +198,34 @@
 
                     <div class="form-group">
                         <label for="extrait">Extrait d'acte de naissance  (PDF) :</label>
-                        <input type="file" id="extrait" name="extrait" class="form-control" accept=".pdf" required>
+                        <input type="file" id="extrait" name="dos_actenais" class="form-control" accept=".pdf" required>
                     </div>
 
                     <div class="form-group">
                         <label for="diplome">Diplôme (PDF) :</label>
-                        <input type="file" id="diplome" name="diplome" class="form-control" accept=".pdf" required>
+                        <input type="file" id="diplome" name="dos_diplome" class="form-control" accept=".pdf" required>
                         <small id="fileHelp" class="form-text text-muted">Une photocopie certifiée conforme du baccalauréat ou diplôme équivalent</small>
                     </div>
 
                     <div class="form-group">
                         <label for="autorisation">Autorisation (PDF) :</label>
-                        <input type="file" id="autorisation" name="autorisation" class="form-control" accept=".pdf" required>
+                        <input type="file" id="autorisation" name="dos_autorisation" class="form-control" accept=".pdf" required>
                         <small id="fileHelp" class="form-text text-muted">Autorisation de concourir délivrée par le ministère de la fonction publique (Pour les fonctionnaires)</small>
                     </div>
 
                     <div class="form-group">
                         <label for="arrete">Arrêté (PDF) :</label>
-                        <input type="file" id="arrete" name="arrete" class="form-control" accept=".pdf" required>
+                        <input type="file" id="arrete" name="dos_arrete" class="form-control" accept=".pdf" required>
                         <small id="fileHelp" class="form-text text-muted">Arrêté de dernière promotion (Pour les fonctionnaires)</small>
                     </div>
 
                     <div class="form-group">
                         <label for="photo">Photo d'identité (JPEG, PNG) :</label>
-                        <input type="file" id="photo" name="photo" class="form-control" accept=".jpeg,.jpg,.png" required>
+                        <input type="file" id="photo" name="dos_photo" class="form-control" accept=".jpeg,.jpg,.png" required>
                         <small id="fileHelp" class="form-text text-muted">Photo format d'identité</small>
                     </div>
-
                     <button type="submit" class="btn btn-primary btn-round">Valider</button>
                 </form>
-            </div>
-            <div id="successMessage" style="display: none;">
-                <p>Votre inscription a été envoyée avec succès !</p>
             </div>
         </div>
     </div>
@@ -238,42 +234,6 @@
 <!-- Scripts Bootstrap 4 -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/4.6.0/js/bootstrap.min.js"></script>
-<script>
-    $(document).ready(function() {
-        $("#inscriptionModal form").submit(function(event) {
-            event.preventDefault();
-
-            // Ouvrir une nouvelle fenêtre centrée
-            var successWindow = window.open("", "_blank", "width=400,height=200,top=200,left=400");
-
-            // Contenu HTML de la fenêtre de succès
-            var successContent = `
-                <html>
-                    <head>
-                        <title>Succès</title>
-                        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
-                        <link rel="stylesheet" type="text/css" href="/css/success_styles.css">
-                    </head>
-                    <body>
-                        <div class="success-message">
-                            <i class="fas fa-check-circle success-icon"></i>
-                            <h2>Votre inscription a été envoyée avec succès !</h2>
-                        </div>
-                    </body>
-                </html>
-            `;
-
-            // Écrire le contenu dans la nouvelle fenêtre
-            successWindow.document.write(successContent);
-
-            // Fermer la modal
-            $("#inscriptionModal").modal("hide");
-
-            // Réinitialisation du formulaire
-            this.reset();
-        });
-    });
-</script>
 <%-include ('./includes/footer')%>
 </body>
 </html>

@@ -1,5 +1,5 @@
 const express = require('express')
-
+const inscription = require('../controllers/inscription')
 const userRoute = express.Router()
 /**
  *  FICHIERS DE ROUTES DU SITE
@@ -118,6 +118,10 @@ userRoute.get('/activites/news3', (req, res)=>{
     res.render('news/_news3', 
                 {page_name: 'activites'})
 })
+
+userRoute.post('/inscription', inscription.smdepot ) ;
+
+
 
 
 module.exports = userRoute ; 
