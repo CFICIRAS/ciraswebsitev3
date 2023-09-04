@@ -121,7 +121,4 @@ userRoute.get('/activites/news3', (req, res)=>{
 
 userRoute.post('/inscription', inscription.smdepot ) ;
 
-
-
-
 module.exports = userRoute ; 
