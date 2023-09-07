@@ -226,6 +226,10 @@ p a
 	color: #000000;
 	margin-bottom: 15px;
 	font-family: "Arial", sans-serif;
+	text-align: justify;
+  }
+  .section_title{
+	color: #000000;
   }
   
   /* Styles pour les missions du CFI-CIRAS */
@@ -250,6 +254,7 @@ p a
 	color: #000000;
 	margin-bottom: 15px;
 	font-family: "Arial", sans-seriff;
+	text-align: justify;
   }
   @keyframes slide-in {
 	0% {

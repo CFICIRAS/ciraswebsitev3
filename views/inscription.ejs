@@ -86,37 +86,49 @@
     <h2 class="composition-dossier-title text-center"><i class="fas fa-folder"></i> Composition du dossier</h2>
 
     <!-- Composition du dossier -->
-    <div class="composition-dossier-section page_section">
-        <div class="container">
-            <div class="row">
-                <div class="col">
-                    <div class="composition-dossier-content">
-                        <ul class="composition-dossier-list">
-                            <li>Une demande manuscrite adressée au directeur du CFI-CIRAS</li>
-                            <li>Un extrait d'acte de naissance</li>
-                            <li>Quatres (4) photos en couleur format identité</li>
-                            <li>Trois (3) enveloppes format A4</li>
-                        </ul>
-                    </div>
+<div class="composition-dossier-section page_section">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+                <!-- Contenu à gauche -->
+                <div class="composition-dossier-content">
+                    <ul class="composition-dossier-list ">
+                        <li>Une demande manuscrite adressée au directeur du CFI-CIRAS</li>
+                        <li>Un extrait d'acte de naissance</li>
+                        <li>Quatres (4) photos en couleur format identité</li>
+                        <li>Trois (3) enveloppes format A4</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <!-- Image du dossier à droite -->
+                <div class="composition-dossier-image">
+                    <img src="/img/dossie.jpg" alt="Image du dossier" class="img-fluid">
                 </div>
             </div>
         </div>
     </div>
+</div>
+
 <!-- Inscription -->
 <div class="inscription-section page_section">
     <div class="container">
         <h2 class="Inscription-title text-center"><i class=""></i>Inscription</h2>
         <div class="row">
             <div class="col">
-                <div class="Inscription-content">
-                    <p class="Inscription-text text-justify">Remplir un formulaire pour candidater pour le prochain concours d'entrée au CFI-CIRAS</p>
-                    <p class="Inscription-text text-justify">L'inscription se passe en deux étapes :</p>
-                    <ul class="Inscription-list text-justify">
+                <div class="Inscription-content" style="font-family: 'Times New Roman', Times, serif; font-size: 16px;">
+                    <p class="Inscription-text text-justify" style="color: black; text-align: justify; font-family: 'Times New Roman', Times, serif; font-size: 20px;">
+                        Remplir un formulaire pour candidater pour le prochain concours d'entrée au CFI-CIRAS
+                    </p>
+                    <p class="Inscription-text text-justify" style="color: black; text-align: justify; font-family: 'Times New Roman', Times, serif; font-size: 20px;">
+                        L'inscription se passe en deux étapes :
+                    </p>
+                    <ul class="Inscription-list text-justify" style="color: black; text-align: justify; font-family: 'Times New Roman', Times, serif; font-size: 20px;">
                         <li>La première consiste à faire un dépôt de dossier en ligne via le site web du CFI-CIRAS</li>
                         <li>La deuxième consiste à valider l'inscription au CFI-CIRAS moyennant le frais d'inscription</li>
                     </ul>
                     <div class="text-center">
-                        <a href="#" class="btn btn-primary btn-round btn-depot-dossier" data-toggle="modal" data-target="#inscriptionModal">Dépôt de dossier</a>
+                        <a href="#" class="btn btn-warning btn-round btn-depot-dossier" data-toggle="modal" data-target="#inscriptionModal" style="font-family: 'Times New Roman', Times, serif; font-size: 25px;">Dépôt de dossier</a>
                     </div>
                 </div>
                 
@@ -124,6 +136,8 @@
         </div>
     </div>
 </div>
+
+
 
 <!-- Modal -->
 <div class="modal fade" id="inscriptionModal" tabindex="-1" role="dialog" aria-labelledby="inscriptionModalLabel" aria-hidden="true">
