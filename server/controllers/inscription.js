@@ -4,8 +4,9 @@ const fs = require("fs");
 
 exports.smdepot = (req, res)=>{
 
-    const { ins_nom
-            ,ins_prenom,
+    const { 
+            ins_nom,
+            ins_prenom,
             ins_tel,
             ins_profile,
             ins_bac, ins_filiere, ins_cycle  } = req.body;
