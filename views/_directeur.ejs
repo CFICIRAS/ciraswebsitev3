@@ -15,7 +15,7 @@
 
 	<div class="home animated animate__fadeInDown">
 		<div class="home_background_container prlx_parent">
-			<div class="home_background prlx" style="background-image:url(img/DCFIC-min.jpg)"></div>
+			<div class="home_background prlx" style="background-image:url(img/dg.png)"></div>
 		</div>
 	</div>
 
@@ -41,17 +41,38 @@
 			</div>
 		</div>
 	</div>
-	<style>
+	<%-include ('./includes/footer')%><style>
+	.directeur_image {
+	  height: 900px; /* Ajuste la hauteur souhaitée */
+	  background-image: url('/img/dg.png');
+	  background-size: cover;
+	  background-position: center; /* L'image sera centrée horizontalement et verticalement */
+	  transform-origin: center center; /* Centre de rotation au milieu de l'image */
+	  transition: opacity 1s ease-in-out, transform 1s ease-in-out; /* Ajoute une transition d'opacité et de rotation de 1 seconde */
+	}
+  
+	/* Styles pour les PC portables (largeur d'écran jusqu'à 992px) */
+	@media (max-width: 992px) {
 	  .directeur_image {
-      height: 700px; /* Ajuste la hauteur souhaitée */
-      background-image: url('/img/dg.png');
-      background-size: cover;
-      background-position: center; /* L'image sera centrée horizontalement et verticalement */
-      transform-origin: center center; /* Centre de rotation au milieu de l'image */
-      transition: opacity 1s ease-in-out, transform 1s ease-in-out; /* Ajoute une transition d'opacité et de rotation de 1 seconde */
-    }
-	  </style>
-<%-include ('./includes/footer')%>
+		height: 300px; /* Ajuste la hauteur souhaitée pour les PC portables */
+	  }
+	}
+  
+	/* Styles pour les tablettes (largeur d'écran jusqu'à 768px) */
+	@media (max-width: 768px) {
+	  .directeur_image {
+		height: 400px; /* Ajuste la hauteur souhaitée pour les tablettes */
+	  }
+	}
+  
+	/* Styles pour les téléphones (largeur d'écran jusqu'à 576px) */
+	@media (max-width: 576px) {
+	  .directeur_image {
+		height: 200px; /* Ajuste la hauteur souhaitée pour les téléphones */
+	  }
+	}
+  </style>
+  
 
 </body>
 </html>
