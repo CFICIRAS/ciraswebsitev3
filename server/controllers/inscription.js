@@ -4,13 +4,13 @@ const fs = require("fs");
 
 exports.smdepot = (req, res)=>{
 
-    const { nom
+    const { ins_nom
             ,ins_prenom,
             ins_tel,
             ins_profile,
             ins_bac, ins_filiere, ins_cycle  } = req.body;
     const newCandidat = {
-    nom,
+    ins_nom,
     ins_prenom,
     ins_tel,
     ins_bac,
@@ -26,7 +26,7 @@ exports.smdepot = (req, res)=>{
     let uploadPath , chemin ; // variables traitements de fichiers
     let isFileUpload = false ; 
 
-        if(nom ==""     || 
+        if(ins_nom ==""     || 
         ins_prenom == "" ||
         ins_tel == ""    ||
         ins_bac == ""    ||
