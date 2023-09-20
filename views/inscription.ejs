@@ -153,7 +153,7 @@
                 <form id="inscriptionForm" enctype="multipart/form-data">
                     <div class="form-group">
                         <label for="profil">Profil :</label>
-                        <select id="ins_profil" name="ins_profil" class="form-control" required>
+                        <select id="profil" name="profil" class="form-control" required>
                             <option value="">Vous êtes ?</option>
                             <option value="bachelier">Bachelier</option>
                             <option value="fonctionnaire">Fonctionnaire</option>
@@ -161,21 +161,24 @@
                     </div>
                     <div id="bachelierFields" style="display: none;">
                         <div class="form-group">
-                            <label for="ins_nom">Nom :</label>
-                            <input type="text" id="ins_nom" name="ins_nom" class="form-control" required>
+                            <label for="nom">Nom :</label>
+                            <input type="text" id="nom" name="ins_nom" class="form-control" required>
                         </div>
                         <div class="form-group">
-                            <label for="ins_prenom">Prénom :</label>
-                            <input type="text" id="ins_prenom" name="prenom" class="form-control" required>
-                        </div>
-                        
-                        <div class="form-group">
-                            <label for="ins_tel">Téléphone :</label>
-                            <input type="ins_tel" id="telephone" name="ins_tel" class="form-control" required>
+                            <label for="prenom">Prénom :</label>
+                            <input type="text" id="prenom" name="ins_prenom" class="form-control" required>
                         </div>
                         <div class="form-group">
-                            <label for="ins_bac">Bac obtenu :</label>
-                            <select id="ins_bac" name="ins_bac" class="form-control" required>
+                            <label for="adresse">Adresse :</label>
+                            <input type="text" id="adresse" name="ins_adresse" class="form-control" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="telephone">Téléphone :</label>
+                            <input type="tel" id="telephone" name="ins_tel" class="form-control" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="bac">Bac obtenu :</label>
+                            <select id="bac" name="ins_bac" class="form-control" required>
                                 <option value="">Choisir le Bac</option>
                                 <option value="Bac Option A">Bac A</option>
                                 <option value="Bac Option B">Bac Option B</option>
@@ -183,17 +186,17 @@
                             </select>
                         </div>
                         <div class="form-group">
-                            <label for="ins_filiere">Filières :</label>
-                            <select id="ins_filiere" name="ins_filiere" class="form-control" required>
+                            <label for="filieres">Filières :</label>
+                            <select id="filieres" name="ins_filiere" class="form-control" required>
                                 <option value="">Choisir la filière</option>
                                 <option value="informatique">INFORMATIQUE</option>
-                                <option value="administration_publique">ADMINISTRATION PUBLIQUE</option>
-                                <option value="assistant_manager">ASSISTANT MANAGER</option>
+                                <option value="admini_public">ADMINISTRATION PUBLIQUE</option>
+                                <option value="asistant_managiere">ASSISTANT MANAGER</option>
                             </select>
                         </div>
                         <div class="form-group">
-                            <label for="ins_cycle">Cycles :</label>
-                            <select id="ins_cycle" name="ins_cycle" class="form-control" required>
+                            <label for="cycles">Cycles :</label>
+                            <select id="cycles" name="ins_cycle" class="form-control" required>
                                 <option value="">Choisir le cycle</option>
                                 <option value="dut">DUT</option>
                                 <option value="licence">LICENCE</option>
@@ -201,11 +204,11 @@
                         </div>
                         <div class="form-group">
                             <label for="extrait">Extrait d'acte de naissance (PDF) :</label>
-                            <input type="file" id="extrait" name="dos_actenais" class="form-control-file" accept=".pdf" required>
+                            <input type="file" id="extrait" name="extrait" class="form-control-file" accept=".pdf" required>
                         </div>
                         <div class="form-group">
                             <label for="diplome">Diplôme (PDF) :</label>
-                            <input type="file" id="diplome" name="dos_diplome " class="form-control-file" accept=".pdf" required>
+                            <input type="file" id="diplome" name="diplome" class="form-control-file" accept=".pdf" required>
                             <small class="form-text text-muted">Une photocopie certifiée conforme du baccalauréat ou diplôme équivalent</small>
                         </div>
                         <div class="form-group">
@@ -233,45 +236,47 @@
                         </div>
                         <div class="form-group">
                             <label for="filieres">Filières :</label>
-                            <select id="filieres" name="ins_filiere" class="form-control" required>
+                            <select id="filieres" name="filieres" class="form-control" required>
                                 <option value="">Choisir la filière</option>
-                                <option value="informatique">INFORMATIQUE</option>
-                                <option value="administration_publique">ADMINISTRATION PUBLIQUE</option>
-                                <option value="assistant_manager">ASSISTANT MANAGER</option>
+                                <option value="Filière 1">INFORMATIQUE</option>
+                                <option value="Filière 2">ADMINISTRATION PUBLIQUE</option>
+                                <option value="Filière 3">ASSISTANT MANAGER</option>
                             </select>
                         </div>
                         <div class="form-group">
                             <label for="cycles">Cycles :</label>
-                            <select id="cycles" name="ins_cycle" class="form-control" required>
+                            <select id="cycles" name="cycles" class="form-control" required>
                                 <option value="">Choisir le cycle</option>
-                                <option value="dut">DUT</option>
-                                <option value="licence">LICENCE</option>
+                                <option value="Cycle 1">DUT</option>
+                                <option value="Cycle 2">LICENCE</option>
                             </select>
                         </div>
                         <div class="form-group">
                             <label for="extrait">Extrait d'acte de naissance (PDF) :</label>
-                            <input type="file" id="extrait" name="dos_actenai" class="form-control-file" accept=".pdf" required>
+                            <input type="file" id="extrait" name="extrait" class="form-control-file" accept=".pdf" required>
                         </div>
                          <div class="form-group">
                             <label for="diplome">Autorisation (PDF) :</label>
-                            <input type="file" id="diplome" name="dos_autorisation" class="form-control-file" accept=".pdf" required>
+                            <input type="file" id="diplome" name="diplome" class="form-control-file" accept=".pdf" required>
                             <small class="form-text text-muted">Autorisation de concourir délivrer par le ministères de la fonction publique</small>
                         </div>
                         <div class="form-group">
                             <label for="diplome">Arréter (PDF) :</label>
-                            <input type="file" id="diplome" name="dos_arrete" class="form-control-file" accept=".pdf" required>
+                            <input type="file" id="diplome" name="diplome" class="form-control-file" accept=".pdf" required>
                             <small class="form-text text-muted">Arreter dernière promotion</small>
                         </div>
                         <div class="form-group">
                             <label for="photo">Photo d'identité (JPEG, PNG) :</label>
-                            <input type="file" id="photo" name="dos_photo" class="form-control-file" accept=".jpeg,.jpg,.png" required>
+                            <input type="file" id="photo" name="photo" class="form-control-file" accept=".jpeg,.jpg,.png" required>
                             <small class="form-text text-muted">Photo format d'identité</small>
                         </div>
                     </div>
                     <button type="submit" class="btn btn-primary btn-round">Valider</button>
                 </form>
             </div>
-            
+            <div id="successMessage" style="display: none;">
+                <p>Votre inscription a été envoyée avec succès !</p>
+            </div>
         </div>
     </div>
 </div>
