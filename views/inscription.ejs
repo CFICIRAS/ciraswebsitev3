@@ -150,132 +150,200 @@
                 </button>
             </div>
             <div class="modal-body">
-                <form id="inscriptionForm" enctype="multipart/form-data">
                     <div class="form-group">
                         <label for="profil">Profil :</label>
-                        <select id="profil" name="profil" class="form-control" required>
+                        <select id="profil" name="ins_profil" class="form-control" required>
                             <option value="">Vous êtes ?</option>
                             <option value="bachelier">Bachelier</option>
                             <option value="fonctionnaire">Fonctionnaire</option>
                         </select>
                     </div>
+                    <!-- Formulaire champ bachelier -->
                     <div id="bachelierFields" style="display: none;">
-                        <div class="form-group">
-                            <label for="nom">Nom :</label>
-                            <input type="text" id="nom" name="ins_nom" class="form-control" required>
-                        </div>
-                        <div class="form-group">
-                            <label for="prenom">Prénom :</label>
-                            <input type="text" id="prenom" name="ins_prenom" class="form-control" required>
-                        </div>
-                        <div class="form-group">
-                            <label for="adresse">Adresse :</label>
-                            <input type="text" id="adresse" name="ins_adresse" class="form-control" required>
-                        </div>
-                        <div class="form-group">
-                            <label for="telephone">Téléphone :</label>
-                            <input type="tel" id="telephone" name="ins_tel" class="form-control" required>
-                        </div>
-                        <div class="form-group">
-                            <label for="bac">Bac obtenu :</label>
-                            <select id="bac" name="ins_bac" class="form-control" required>
-                                <option value="">Choisir le Bac</option>
-                                <option value="Bac Option A">Bac A</option>
-                                <option value="Bac Option B">Bac Option B</option>
-                                <option value="Bac Option C">Bac Option C</option>
-                            </select>
-                        </div>
-                        <div class="form-group">
-                            <label for="filieres">Filières :</label>
-                            <select id="filieres" name="ins_filiere" class="form-control" required>
-                                <option value="">Choisir la filière</option>
-                                <option value="informatique">INFORMATIQUE</option>
-                                <option value="admini_public">ADMINISTRATION PUBLIQUE</option>
-                                <option value="asistant_managiere">ASSISTANT MANAGER</option>
-                            </select>
-                        </div>
-                        <div class="form-group">
-                            <label for="cycles">Cycles :</label>
-                            <select id="cycles" name="ins_cycle" class="form-control" required>
-                                <option value="">Choisir le cycle</option>
-                                <option value="dut">DUT</option>
-                                <option value="licence">LICENCE</option>
-                            </select>
-                        </div>
-                        <div class="form-group">
-                            <label for="extrait">Extrait d'acte de naissance (PDF) :</label>
-                            <input type="file" id="extrait" name="extrait" class="form-control-file" accept=".pdf" required>
-                        </div>
-                        <div class="form-group">
-                            <label for="diplome">Diplôme (PDF) :</label>
-                            <input type="file" id="diplome" name="diplome" class="form-control-file" accept=".pdf" required>
-                            <small class="form-text text-muted">Une photocopie certifiée conforme du baccalauréat ou diplôme équivalent</small>
-                        </div>
-                        <div class="form-group">
-                            <label for="photo">Photo d'identité (JPEG, PNG) :</label>
-                            <input type="file" id="photo" name="photo" class="form-control-file" accept=".jpeg,.jpg,.png" required>
-                            <small class="form-text text-muted">Photo format d'identité</small>
-                        </div>
+                        <form id="inscriptionForm" method="post" action="/deposer" enctype="multipart/form-data">
+                                <div class="form-group">
+                                    <label for="nom">Nom :</label>
+                                    <input type="text" id="nom" 
+                                        name="ins_nom" 
+                                    class="form-control" >
+                                </div>
+                                <div class="form-group">
+                                    <label for="prenom">Prénom :</label>
+                                    <input type="text" id="prenom" 
+                                        name="ins_prenom" 
+                                        class="form-control">
+                                </div>
+                                <div class="form-group">
+                                    <label for="adresse">Adresse :</label>
+                                    <input type="text" id="adresse" 
+                                        name="ins_adresse" 
+                                        class="form-control" >
+                                </div>
+                                <div class="form-group">
+                                    <label for="telephone">Téléphone :</label>
+                                    <input type="tel" id="telephone" 
+                                    name="ins_tel" 
+                                    class="form-control">
+                                </div>
+                                <div class="form-group">
+                                    <label for="bac">Bac obtenu :</label>
+                                    <select id="bac" 
+                                    name="ins_bac" 
+                                    class="form-control">
+                                        <option 
+                                        value="">Choisir le Bac
+                                        </option>
+                                        <option 
+                                        value="bac_A">BAC SERIE A
+                                        </option>
+                                        <option 
+                                        value="bac_D">Bac SERIE D</option>
+                                        <option 
+                                        value="bac_C">BAC SERIE C</option>
+                                        <option 
+                                        value="bac_E">BAC SERIE E</option>
+                                        <option 
+                                        value="bac_G2">BAC SERIE G2</option>
+                                        <option 
+                                        value="bac_BG">BAC SERIE BG</option>
+                                    </select>
+                                </div>
+                                <div class="form-group">
+                                    <label for="filieres">Filières :</label>
+                                    <select id="filieres" 
+                                    name="ins_filiere"
+                                    class="form-control">
+                                        <option value="">Choisir la filière</option>
+                                        <option value="informatique">INFORMATIQUE</option>
+                                        <option value="admini_public">ADMINISTRATION PUBLIQUE</option>
+                                        <option value="asistant_managere">ASSISTANT MANAGER</option>
+                                    </select>
+                                </div>
+                                <div class="form-group">
+                                    <label for="cycles">Cycles :</label>
+                                    <select id="cycles" 
+                                    name="ins_cycle" 
+                                    class="form-control">
+                                        <option value="">Choisir le cycle</option>
+                                        <option value="dut">DUT</option>
+                                        <option value="licence">LICENCE</option>
+                                    </select>
+                                </div>
+                            <div class="form-group">
+                                <label for="extrait">Extrait d'acte de naissance (PDF) :</label>
+                                <input type="file" id="extrait" 
+                                name="dos_actenais" 
+                                class="form-control-file" 
+                                accept=".pdf">
+                            </div>
+                            <div class="form-group">
+                                <label for="diplome">Diplôme (PDF) :</label>
+                                <input type="file" id="diplome" 
+                                name="dos_diplome" 
+                                class="form-control-file" 
+                                accept=".pdf">
+                                <small 
+                                 class="form-text text-muted">Une photocopie certifiée conforme du baccalauréat ou diplôme équivalent</small>
+                            </div>
+                            <div class="form-group">
+                                <label for="photo">Photo d'identité (JPEG, PNG) :</label>
+                                <input type="file" 
+                                id="photo" 
+                                name="dos_photo" 
+                                class="form-control-file" 
+                                accept=".jpeg,.jpg,.png" 
+                                required>
+                                <small class="form-text text-muted">Photo format d'identité</small>
+                            </div>
+                            <button type="submit" 
+                            class="btn btn-primary">Deposer</button>
+                        </form>  
                     </div>
+                    <!-- Formulaire champ  foncrtionnaire -->
                     <div id="fonctionnaireFields" style="display: none;">
-                        <div class="form-group">
-                            <label for="nom">Nom :</label>
-                            <input type="text" id="nom" name="nom" class="form-control" required>
-                        </div>
-                        <div class="form-group">
-                            <label for="prenom">Prénom :</label>
-                            <input type="text" id="prenom" name="prenom" class="form-control" required>
-                        </div>
-                        <div class="form-group">
-                            <label for="adresse">Adresse :</label>
-                            <input type="text" id="adresse" name="adresse" class="form-control" required>
-                        </div>
-                        <div class="form-group">
-                            <label for="telephone">Téléphone :</label>
-                            <input type="tel" id="telephone" name="telephone" class="form-control" required>
-                        </div>
-                        <div class="form-group">
-                            <label for="filieres">Filières :</label>
-                            <select id="filieres" name="filieres" class="form-control" required>
-                                <option value="">Choisir la filière</option>
-                                <option value="Filière 1">INFORMATIQUE</option>
-                                <option value="Filière 2">ADMINISTRATION PUBLIQUE</option>
-                                <option value="Filière 3">ASSISTANT MANAGER</option>
-                            </select>
-                        </div>
-                        <div class="form-group">
-                            <label for="cycles">Cycles :</label>
-                            <select id="cycles" name="cycles" class="form-control" required>
-                                <option value="">Choisir le cycle</option>
-                                <option value="Cycle 1">DUT</option>
-                                <option value="Cycle 2">LICENCE</option>
-                            </select>
-                        </div>
-                        <div class="form-group">
-                            <label for="extrait">Extrait d'acte de naissance (PDF) :</label>
-                            <input type="file" id="extrait" name="extrait" class="form-control-file" accept=".pdf" required>
-                        </div>
-                         <div class="form-group">
-                            <label for="diplome">Autorisation (PDF) :</label>
-                            <input type="file" id="diplome" name="diplome" class="form-control-file" accept=".pdf" required>
-                            <small class="form-text text-muted">Autorisation de concourir délivrer par le ministères de la fonction publique</small>
-                        </div>
-                        <div class="form-group">
-                            <label for="diplome">Arréter (PDF) :</label>
-                            <input type="file" id="diplome" name="diplome" class="form-control-file" accept=".pdf" required>
-                            <small class="form-text text-muted">Arreter dernière promotion</small>
-                        </div>
-                        <div class="form-group">
-                            <label for="photo">Photo d'identité (JPEG, PNG) :</label>
-                            <input type="file" id="photo" name="photo" class="form-control-file" accept=".jpeg,.jpg,.png" required>
-                            <small class="form-text text-muted">Photo format d'identité</small>
-                        </div>
-                    </div>
-                    <button type="submit" class="btn btn-primary btn-round">Valider</button>
-                </form>
+                        <form action="/deposer" method="post" enctype="multipart/form-data">
+                            <div class="form-group">
+                                <label for="nom">Nom :</label>
+                                <input type="text" id="nom" 
+                                name="ins_nom" 
+                                class="form-control">
+                            </div>
+                            <div class="form-group">
+                                <label for="prenom">Prénom :</label>
+                                <input type="text" id="prenom" 
+                                name="ins_prenom" 
+                                class="form-control">
+                            </div>
+                            <div class="form-group">
+                                <label for="adresse">Adresse :</label>
+                                <input type="text" id="adresse" 
+                                name="ins_adresse" 
+                                class="form-control" >
+                            </div>
+                            <div class="form-group">
+                                <label for="telephone">Téléphone :</label>
+                                <input type="tel" id="telephone" 
+                                name="ins_tel" 
+                                class="form-control">
+                            </div>
+                            <div class="form-group">
+                                <label for="filieres">Filières :</label>
+                                    <select
+                                        id="filieres"
+                                        name="ins_filiere"
+                                        class="form-control">
+                                        <option value="">Choisir la filière</option>
+                                        <option value="informatique">INFORMATIQUE</option>
+                                        <option value="administration_public">ADMINISTRATION PUBLIQUE</option>
+                                        <option value="assistant_man">ASSISTANT MANAGER</option>
+                                    </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="cycles">Cycles :</label>
+                                    <select id="cycles" 
+                                    name="ins_cycle" 
+                                    class="form-control">
+                                        <option value="">Choisir le cycle</option>
+                                        <option value="dut">DUT</option>
+                                        <option value="licence">LICENCE</option>
+                                    </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="extrait">Extrait d'acte de naissance (PDF) :</label>
+                                <input type="file" id="extrait" 
+                                name="dos_actenais" 
+                                class="form-control-file" 
+                                accept=".pdf">
+                            </div>
+                            <div class="form-group">
+                                <label for="diplome">Autorisation (PDF) :</label>
+                                <input type="file" id="diplome" 
+                                name="dos_diplome" 
+                                class="form-control-file" 
+                                accept=".pdf">
+                                <small 
+                                class="form-text text-muted">Autorisation de concourir délivrer par le ministères de la fonction publique</small>
+                            </div>
+                            <div class="form-group">
+                                <label for="diplome">Arréter (PDF) :</label>
+                                <input type="file" id="diplome" 
+                                name="dos_arrete" 
+                                class="form-control-file" 
+                                accept=".pdf">
+                                <small class="form-text text-muted">Arreter dernière promotion</small>
+                            </div>
+                            <div class="form-group">
+                                <label for="photo">Photo d'identité (JPEG, PNG) :</label>
+                                <input type="file" id="photo" 
+                                name="dos_photo" 
+                                class="form-control-file" 
+                                accept=".jpeg,.jpg,.png">
+                                <small class="form-text text-muted">Photo format d'identité</small>
+                            </div>
+                            <button type="submit" class="btn btn-primary">Deposer</button>
+                        </form>
             </div>
-            <div id="successMessage" style="display: none;">
-                <p>Votre inscription a été envoyée avec succès !</p>
+                    
             </div>
         </div>
     </div>

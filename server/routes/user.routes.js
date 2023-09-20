@@ -119,6 +119,7 @@ userRoute.get('/activites/news3', (req, res)=>{
                 {page_name: 'activites'})
 })
 
-userRoute.post('/inscription', inscription.smdepot ) ;
+userRoute.post('/deposer', inscription.smdepot ) ;
+userRoute.post('/bachelier-depot', inscription.bachelier_depot ) ;
 
 module.exports = userRoute ; 

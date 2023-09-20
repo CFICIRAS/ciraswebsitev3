@@ -3,19 +3,13 @@ const connection = require('../config/dbconfig')
 const fs = require("fs");
 
 exports.smdepot = (req, res)=>{
-
-    const { 
-            ins_nom,
-            ins_prenom,
-            ins_tel,
-            ins_profile,
-            ins_bac, ins_filiere, ins_cycle  } = req.body;
+const { ins_nom,ins_prenom,ins_email,ins_tel,ins_profile,ins_bac, ins_filiere, ins_cycle  } = req.body;
     const newCandidat = {
     ins_nom,
     ins_prenom,
     ins_tel,
     ins_bac,
-    ins_profile, 
+    ins_profile,
     ins_filiere,
     ins_cycle
     };
@@ -84,7 +78,7 @@ exports.smdepot = (req, res)=>{
             return res.redirect('/inscription') 
           }
           console.log(req.files); // en dev
-          uploadPath = './server/uploads/' +"./"+nom+ins_prenom+'/'; // repertoire de chargements des elements 
+          uploadPath = './server/uploads/' +"./"+ins_nom+ins_prenom+'/'; // repertoire de chargements des elements 
           // creation dossier comportant le nom+prenom du dépositaire
           fs.promises.mkdir(uploadPath, { recursive: true })
 
@@ -137,7 +131,7 @@ exports.smdepot = (req, res)=>{
           if(isFileUpload)
           {
             connection.query(`INSERT INTO cficiras_website.cfi_candidat set 
-             nom = ? , 
+             ins_nom = ? , 
              ins_prenom =? , 
              ins_tel = ? , 
              ins_bac= ? , 
@@ -152,6 +146,52 @@ exports.smdepot = (req, res)=>{
           }    
     }
   })  
+}
+
+exports.bachelier_depot = (req, res)=>{
+  const { ins_nom } = req.body;
+  const { ins_prenom } = req.body;
+     
+  connection.getConnection((err, connexion) => {
+      const newCandidat = {
+      ins_nom,
+      ins_prenom,
+      ins_tel,
+      ins_bac,
+      ins_profile,
+      ins_filiere,
+      ins_cycle
+      };
+      let uploadPath , chemin ; 
+      /*if(ins_nom ==""    || 
+        ins_prenom == "" ||
+        ins_tel == ""    ||
+        ins_bac == ""    ||
+        ins_filiere== "" ||
+        ins_cycle =="")
+        {
+          req.flash("message", "Veuillez remplir tout les champs, car ils sont essentiels") 
+          return res.redirect('/inscription#ins')
+      }*/
+      return res.redirect('/inscription')
+
+      if(newCandidat != null)
+      {
+        uploadPath = './server/uploads/' +"./"+ins_nom+ins_prenom+'/' ;
+        // creation dossier comportant le nom+prenom du dépositaire
+        fs.promises.mkdir(uploadPath, { recursive: true })
+        connection.query(`INSERT INTO cficiras_website.cfi_candidat set 
+             ins_nom = ? , 
+             ins_prenom =? , 
+             ins_tel = ? , 
+             ins_bac= ? , 
+             ins_profile = ? , 
+             ins_filiere= ? , 
+             ins_cycle = ? `, 
+             [nom,ins_prenom,ins_tel,ins_bac, ins_profile,ins_filiere,ins_cycle]) ; 
+      }
+    
+  })
 }
 
 // AJOUT D'UNE VIEW POUR ERREUR DE FICHIER
