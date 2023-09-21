@@ -1,5 +1,6 @@
 const express = require('express')
 const inscription = require('../controllers/inscription')
+const depot = require('../controllers/depot')
 const userRoute = express.Router()
 /**
  *  FICHIERS DE ROUTES DU SITE
@@ -120,6 +121,6 @@ userRoute.get('/activites/news3', (req, res)=>{
 })
 
 userRoute.post('/deposer', inscription.smdepot ) ;
-userRoute.post('/bachelier-depot', inscription.bachelier_depot ) ;
+userRoute.post('/bachelier-depot',  ) ;
 
 module.exports = userRoute ; 
