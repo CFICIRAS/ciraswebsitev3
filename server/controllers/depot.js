@@ -31,7 +31,6 @@ exports.depotProfile1 = (req, res)=>{
             req.flash("message", "Veuillez remplir tout les champs, car ils sont essentiels") 
             return res.redirect('/inscription#ins')
         } 
-
         const newcandidat = {
             ins_nom,
             ins_prenom,

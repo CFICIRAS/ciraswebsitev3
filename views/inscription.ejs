@@ -152,7 +152,7 @@
             <div class="modal-body">
                     <div class="form-group">
                         <label for="profil">Profil :</label>
-                        <select id="profil" name="ins_profil" class="form-control" required>
+                        <select id="profil" name="ins_profile" class="form-control">
                             <option value="">Vous êtes ?</option>
                             <option value="bachelier">Bachelier</option>
                             <option value="fonctionnaire">Fonctionnaire</option>
@@ -160,7 +160,7 @@
                     </div>
                     <!-- Formulaire champ bachelier -->
                     <div id="bachelierFields" style="display: none;">
-                        <form id="inscriptionForm" method="post" action="/deposer" enctype="multipart/form-data">
+                        <form id="inscriptionForm" method="post" action="/bachelier-depot" enctype="multipart/form-data">
                                 <div class="form-group">
                                     <label for="nom">Nom :</label>
                                     <input type="text" id="nom" 
@@ -262,7 +262,7 @@
                     </div>
                     <!-- Formulaire champ  foncrtionnaire -->
                     <div id="fonctionnaireFields" style="display: none;">
-                        <form action="/deposer" method="post" enctype="multipart/form-data">
+                        <form action="/fonctionnaire-depot" method="post" enctype="multipart/form-data">
                             <div class="form-group">
                                 <label for="nom">Nom :</label>
                                 <input type="text" id="nom" 
