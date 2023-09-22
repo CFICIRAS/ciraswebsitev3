@@ -20,7 +20,7 @@ const { ins_nom,ins_prenom,ins_email,ins_tel,ins_profile,ins_bac, ins_filiere, i
     let uploadPath , chemin ; // variables traitements de fichiers
     let isFileUpload = false ; 
 
-        if(ins_nom ==""     || 
+        if(ins_nom ==""  || 
         ins_prenom == "" ||
         ins_tel == ""    ||
         ins_bac == ""    ||

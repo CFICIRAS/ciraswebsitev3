@@ -1,5 +1,8 @@
 const express = require('express') ; 
 const path = require('path');
+const session = require('express-session')
+const flash = require('connect-flash')
+const fileUpload = require('express-fileupload')
 const routes = require('./server/routes/user.routes')
 const PORT = process.env.PORT || 3000
 const app = express()
@@ -8,7 +11,22 @@ app.set('view engine', 'ejs')
 
 /* MIDDLEWARE */
 app.use(express.urlencoded({ extended : true}))
-app.use(express.json()) ; 
+app.use(express.json()) ;
+//SESSIONS 
+app.use(session({
+    secret : 'cficiras',
+    resave : true,
+    saveUninitialized : true, 
+    //store: new MySQLStore(connection) , // ajouter le module 'express-mysql-session'
+    cookie : { secure : false}
+  }))
+app.use(flash());
+  // Global variables
+app.use((req, res, next) => {
+res.locals.message = req.flash("message");
+res.locals.success = req.flash("success");
+next();
+}); 
 
 app.use('/css', express.static(path.resolve(__dirname,'assets/styles')))
 app.use('/img', express.static(path.resolve(__dirname,'assets/images')))
