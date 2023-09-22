@@ -7,7 +7,6 @@ const app = express()
 app.set('view engine', 'ejs')
 
 /* MIDDLEWARE */
-app.use(routes) ; 
 app.use(express.urlencoded({ extended : true}))
 app.use(express.json()) ; 
 
@@ -21,6 +20,7 @@ app.use('/scss', express.static(path.resolve(__dirname,'assets/sass')))
 app.use('/upload', express.static(path.resolve(__dirname,'server/uploads')))
 app.use('/plugins', express.static(path.resolve(__dirname,'assets/plugins')))
 app.use(express.static('public'));
+app.use(routes) ; 
 
 // renvoie la PAGE 404 
 app.listen(PORT, ()=> { console.log(`Serveur active sur http://localhost:${PORT}`)});

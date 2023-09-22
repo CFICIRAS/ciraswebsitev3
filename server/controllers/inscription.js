@@ -147,11 +147,10 @@ const { ins_nom,ins_prenom,ins_email,ins_tel,ins_profile,ins_bac, ins_filiere, i
   })  
 }
 
-exports.bachelier_depot = (res, req)=>{
-  const ins_nom  = req.body;
-  const ins_prenom = req.body;
+exports.bachelier_depot = (req, res)=>{
+  const ins_nom     = req.body ;
+  const ins_prenom  = req.body ;
   connection.getConnection((err, connexion) => {
-      
       let uploadPath , chemin ; 
       /*if(ins_nom ==""    || 
         ins_prenom == "" ||
