@@ -29,8 +29,8 @@ exports.depotProfile1 = (req, res)=>{
         )
         {
             req.flash("message", "Veuillez remplir tout les champs, car ils sont essentiels") 
-            return res.redirect('/inscription#ins')
-        } 
+            return res.redirect('/inscription#bloc_inscription')
+        }
         const newcandidat = {
             ins_nom,
             ins_prenom,
@@ -40,6 +40,11 @@ exports.depotProfile1 = (req, res)=>{
             ins_bac, 
             ins_filiere, 
             ins_cycle
+        }
+        if(newcandidat==undefined)
+        {
+            req.flash("message", "Veuillez remplir tout les champs, car ils sont essentiels") 
+            return res.redirect('/inscription#bloc_inscription')
         }
      pool.getConnection(async (err, connexion) =>  {
         if(err)

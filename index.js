@@ -4,10 +4,19 @@ const session = require('express-session')
 const flash = require('connect-flash')
 const fileUpload = require('express-fileupload')
 const routes = require('./server/routes/user.routes')
-const PORT = process.env.PORT || 3000
+const https = require('https');
+const fs = require('fs');
+const PORT = process.env.PORT || 443
 const app = express()
+
+
 /** MOTEUR DE RENDU */
 app.set('view engine', 'ejs')
+const options = {
+  key: fs.readFileSync('ssl/private.key'),
+  cert: fs.readFileSync('ssl/ssl.crt')
+};
+
 
 /* MIDDLEWARE */
 app.use(express.urlencoded({ extended : true}))
@@ -27,6 +36,12 @@ res.locals.message = req.flash("message");
 res.locals.success = req.flash("success");
 next();
 }); 
+app.use((req, res, next) => {
+  if (!req.secure) {
+    return res.redirect(`https://${req.headers.host}${req.url}`);
+  }
+  next();
+});
 
 app.use('/css', express.static(path.resolve(__dirname,'assets/styles')))
 app.use('/img', express.static(path.resolve(__dirname,'assets/images')))
@@ -40,5 +55,11 @@ app.use('/plugins', express.static(path.resolve(__dirname,'assets/plugins')))
 app.use(express.static('public'));
 app.use(routes) ; 
 
+const httpsServer = https.createServer(options, app);
+
+httpsServer.listen(PORT, () => {
+  console.log(`Serveur HTTPS en cours d'exécution sur le port https://localhost:${PORT}`);
+});
+
 // renvoie la PAGE 404 
-app.listen(PORT, ()=> { console.log(`Serveur active sur http://localhost:${PORT}`)});
+//app.listen(PORT, ()=> { console.log(`Serveur active sur http://localhost:${PORT}`)});
